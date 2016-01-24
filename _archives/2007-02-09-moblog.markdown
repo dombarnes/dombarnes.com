@@ -1,0 +1,14 @@
+---
+
+comments: true
+date: 2007-02-09 23:33:33+00:00
+layout: post
+slug: moblog
+title: Moblog
+wordpress_id: 193
+categories:
+- blogs
+- tech
+---
+
+This could be the first of at least a few blogs from my mobile. Now i can blog from m.wordpress.comi love technology

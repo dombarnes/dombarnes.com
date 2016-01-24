@@ -1,0 +1,24 @@
+---
+
+comments: true
+date: 2007-05-07 18:00:29+00:00
+layout: post
+slug: bsod
+title: BSOD
+wordpress_id: 170
+categories:
+- misc
+---
+
+I was out in the Bullring today and they have these information booths where you can find shops and see a map of the Bullring. And what did I see? This:
+![BSOD in the Bullring](http://farm1.static.flickr.com/225/488591173_c7535afbc6.jpg?v=1178560232)
+
+
+
+
+It always makes me chuckle when I see everyday machines crash, like cash machines stuck on the BSOD, or the movie listings at the cinema.
+
+
+
+
+Technorati tags: [BSOD](http://technorati.com/tag/bsod), [bullring](http://technorati.com/tag/bullring), [geekhumour](http://technorati.com/tag/geekhumour)

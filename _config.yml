@@ -1,0 +1,105 @@
+# Site wide configuration
+
+title: Dom Barnes
+locale: en_GB
+url: "http://localhost:4000" # the base hostname & protocol for your site
+
+
+# Jekyll configuration
+
+permalink: /:title.html
+markdown:    kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+
+
+# Octopress
+
+# Default extensions
+post_ext: md
+page_ext: md
+
+# Found in _templates/
+post_layout: post
+page_layout: page
+
+# Format titles with titlecase?
+titlecase: true
+
+
+# Site owner
+owner:
+  name: Dom Barnes
+  avatar: bio-photo.jpg
+  bio: "You'll find me on Twitter. Technical Product Lead for Trilby"
+  email: dom@dombarnes.com
+  disqus-shortname: domster83
+  twitter: domster
+  facebook: #username
+  google:
+    plus: #username
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  github: dombarnes
+  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
+  linkedin: dominicbarnes
+  xing: #username
+  instagram: dombarnes
+  lastfm: domster83
+  tumblr: dombarnes
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  weibo: #username
+  flickr: domster83
+  codepen: #username
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+  archives:
+    output: true
+    permalink: /:year/:month/:day/:title
+
+
+defaults:
+  -
+    scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      author: "Dom Barnes"
+      layout: "default"
+  -
+    scope:
+      path: "archives"
+      type: "posts"
+    values:
+      author: "Dom Barnes"
+  -
+    scope:
+      path: "projects"
+      type: "pages"
+    values:
+      author: "Dom Barnes"

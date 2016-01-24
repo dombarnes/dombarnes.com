@@ -1,0 +1,24 @@
+---
+
+comments: true
+date: 2006-11-15 00:42:42+00:00
+layout: post
+slug: cars-dvd
+title: Cars DVD
+wordpress_id: 220
+categories:
+- films
+- tech
+---
+
+It arrived at the weekend. Pixar's Cars on DVD in Special Limited Edition Tin (Dual Disc).  I saw this film at the cinema and it was great. How did I get this in the UK? [CD-WOW ](http://www.cd-wow.com)of course.
+
+
+
+
+The only downside is disc 2 is region 4 only so I ca't watch it on my Sony DVD player. I can on my laptop but only if I change region, then I'd need to change it back, etc. So what do I do? I use Mac The Ripper, and use it to make a backup of the DVD incase the real one gets trashed. Oh and its coded to region 2 and 4, so I can watch it on my Sony DVD player. It is only fair that I am allowed to make copies of media I purchased and have paid a fee to the distribution company and studio for. And I shouldn't be taxed on the media!
+
+
+
+
+This all links back to the Zune that ha an agreement to pay Universal Music Group (UMG) to pay them for every zune sold because "These devices are just repositories for stolen music, and they all know it.” . So its official. Every iPod owner is a pirate and should pay as masuch. Well F*ck you UMG and Microsoft. Your Zune can go to hell with all your other failed devices.

@@ -1,0 +1,20 @@
+---
+
+comments: true
+date: 2008-02-20 19:26:35+00:00
+layout: post
+slug: ikea
+title: Ikea!
+wordpress_id: 97
+categories:
+- video
+tags:
+- futon
+- grankulla
+- ikea
+- stop motion
+- youtube
+---
+
+I went to ikea the other day and bought this:  
+[youtube http://www.youtube.com/watch?v=L1hZa47cV9c&hl;=en]

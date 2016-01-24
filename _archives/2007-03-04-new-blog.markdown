@@ -1,0 +1,26 @@
+---
+
+comments: true
+date: 2007-03-04 11:50:33+00:00
+layout: post
+slug: new-blog
+title: New blog
+wordpress_id: 189
+categories:
+- band
+- blogs
+- douglasfurs
+---
+
+So I decided to move the Douglas Furs portion to another blog page to keep it separate from my personal blogging stuff.
+I'll try to post band stuff on both but then keep anything non-band on this blog. Be sure to check it out at
+
+
+
+
+[http://douglasfurs.wordpress.com](http://douglasfurs.wordpress.com)
+
+
+
+
+and try out those demo songs!
