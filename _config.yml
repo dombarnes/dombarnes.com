@@ -2,7 +2,7 @@
 
 title: Dom Barnes
 locale: en_GB
-url: "http://localhost:4000" # the base hostname & protocol for your site
+url: "http://jekyll.dombarnes.com" # the base hostname & protocol for your site
 
 
 # Jekyll configuration
@@ -78,9 +78,6 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
-  archives:
-    output: true
-    permalink: /:year/:month/:day/:title
 
 
 defaults:
@@ -91,12 +88,6 @@ defaults:
     values:
       author: "Dom Barnes"
       layout: "default"
-  -
-    scope:
-      path: "archives"
-      type: "posts"
-    values:
-      author: "Dom Barnes"
   -
     scope:
       path: "projects"
