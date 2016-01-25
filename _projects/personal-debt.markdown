@@ -1,10 +1,12 @@
 ---
 
+author: dombarnes
 comments: false
 date: 2015-11-05 18:00:29+00:00
 layout: page
 slug: personal-debt
 title: Personal Debt
+
 ---
 Blog
 
