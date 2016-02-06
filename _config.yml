@@ -1,97 +1,59 @@
-# Site wide configuration
-
-title: Dom Barnes
-locale: en_GB
-# url: "http://localhost:4000" # the base hostname & protocol for your site
-url: "http://jekyll.dombarnes.com" # the base hostname & protocol for your site
-
-
-# Jekyll configuration
-
-permalink: /:title.html
-markdown:    kramdown
-highlighter: rouge
-sass:
-  sass_dir: _sass
-  style: compressed
+# Build settings
 gems:
-  - jekyll-sitemap
+  - jemoji
+  - jekyll-paginate
 
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  # enable_coderay: false
+# Site settings
+title: "Dom Barnes"
+description: > # this means to ignore newlines until "email:"
+   Hi I'm @domster. I write about technology mostly.
 
+email: dom@dombarnes.com
+#blog logo
+logo: "/assets/images/df_logo.jpg"
+# blog cover
+cover: "/assets/images/ipad_coffee.jpg"
 
-# Octopress
+name: 'Dom Barnes'
+author: 'Dom Barnes'
+author_image: "/assets/images/author.jpg"
 
-# Default extensions
-post_ext: md
-page_ext: md
+paginate:	8
 
-# Found in _templates/
-post_layout: post
-page_layout: page
+url: "http://localhost:4000" # the base hostname & protocol for your site
+baseurl: ""
+#used to display twitter cards
+twitter_handle: '@domster'
 
-# Format titles with titlecase?
-titlecase: true
+#fill in disqus shortname to use disqus
+disqus: dombarnes
 
+# social icons and sharing options
+social:
+  - icon:	twitter
+    url:	https://twitter.com/domster
+    desc: Follow me on twitter
+    share_url: http://twitter.com/share
+    share_title: ?text=
+    share_link: "&amp;url="
 
-# Site owner
-owner:
-  name: Dom Barnes
-  avatar: bio-photo.jpg
-  bio: "You'll find me on Twitter. Technical Product Lead for Trilby"
-  email: dom@dombarnes.com
-  disqus-shortname: domster83
-  twitter: domster
-  facebook: #username
-  google:
-    plus: #username
-    analytics:
-    verify:
-    ad-client:
-    ad-slot:
-  bing-verify:
-  github: dombarnes
-  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: dominicbarnes
-  xing: #username
-  instagram: dombarnes
-  lastfm: domster83
-  tumblr: dombarnes
-  pinterest: #username
-  foursquare: #username
-  steam: #username
-  dribbble: #username
-  youtube: #username
-  soundcloud: #username
-  weibo: #username
-  flickr: domster83
-  codepen: #username
+#  - icon:	facebook
+#    url:	https://facebook.com/???
+#    desc: Connect with me facebook
+#    share_url: https://www.facebook.com/sharer.php
+#    share_title: ?t=
+#    share_link: "&amp;u="
 
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
+  - icon:	github
+    url:	https://github.com/dombarnes
+    desc:	Fork me on github
+    share_url:
+    share_title:
+    share_link:
 
-collections:
-  projects:
-    output: true
-    permalink: /projects/:path/
-
-
-defaults:
-  -
-    scope:
-      path: "_posts"
-      type: "posts"
-    values:
-      author: "Dom Barnes"
-      layout: "default"
-  -
-    scope:
-      path: "projects"
-      type: "pages"
-    values:
-      author: "Dom Barnes"
+#  - icon:	google-plus
+#    url:	https://google.com/???
+#    desc:	Add me on google+
+#    share_url:
+#    share_title:
+#    share_link:
