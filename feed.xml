@@ -1,43 +1,712 @@
----
-sitemap: false
----
-
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-<title type="text">{{ site.title }}</title>
+<title type="text">Dom Barnes</title>
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="{{ site.url }}/feed.xml" />
-<link rel="alternate" type="text/html" href="{{ site.url }}" />
-<updated>{{ site.time | date_to_xmlschema }}</updated>
-<id>{{ site.url }}/</id>
+<link rel="self" type="application/atom+xml" href="http://dombarnes.com/feed.xml" />
+<link rel="alternate" type="text/html" href="http://dombarnes.com" />
+<updated>2016-02-06T23:38:17+00:00</updated>
+<id>http://dombarnes.com/</id>
 <author>
-  <name>{{ site.owner.name }}</name>
-  <uri>{{ site.url }}/</uri>
-  {% if site.owner.email %}<email>{{ site.owner.email }}</email>{% endif %}
+  <name></name>
+  <uri>http://dombarnes.com/</uri>
+  
 </author>
-{% for post in site.posts limit:20 %}
-{% if post.author %}
-  {% assign author = site.data.authors[post.author] %}
-{% else %}
-  {% assign author = site.owner %}
-{% endif %}
+
+
 <entry>
-  <title type="html"><![CDATA[{{ post.title | cdata_escape }}]]></title>
-  <link rel="alternate" type="text/html" href="{{ site.url }}{{ post.url }}" />
-  <id>{{ site.url }}{{ post.id }}</id>
-  {% if post.modified %}<updated>{{ post.modified | to_xmlschema }}T00:00:00-00:00</updated>
-  <published>{{ post.date | date_to_xmlschema }}</published>
-  {% else %}<published>{{ post.date | date_to_xmlschema }}</published>
-  <updated>{{ post.date | date_to_xmlschema }}</updated>{% endif %}
+  <title type="html"><![CDATA[Nifty MiniDrive]]></title>
+  <link rel="alternate" type="text/html" href="http://dombarnes.com/2013/02/25/nifty-minidrive" />
+  <id>http://dombarnes.com/2013/02/25/nifty-minidrive</id>
+  <published>2013-02-25T12:34:23+00:00</published>
+  <updated>2013-02-25T12:34:23+00:00</updated>
   <author>
-    <name>{{ author.name }}</name>
-    <uri>{{ site.url }}</uri>
-    {% if author.email %}<email>{{ author.email }}</email>{% endif %}
+    <name></name>
+    <uri>http://dombarnes.com</uri>
+    
   </author>
   <content type="html">
-    {{ post.content | xml_escape }}
-    {% include _feed-footer.html %}
+    &lt;p&gt;In July 2012, I backed my first Kickstarter, the Nifty Drive. The idea is simple. A MicroSD to SD adapter designed to fit perfectly in the MacBook Air, or Pro laptop.&lt;/p&gt;
+
+&lt;p&gt;When I bought my MacBook Air in San Francisco in 2011 and bought the best one I could  get. I was saving some money buying it in the USA so went for the 1.8GHz i7 model. It came with a 256GB SD. Moving from a MacBook Pro that had a 320GB hard drive, I immediately had to get used to working with much less space. I ditched some old iPhoto Libraries, some TV and Movies from iTunes and moved my VMWare Fusion machines to an external hard drive, and managed to get my usage down to 223GB.&lt;/p&gt;
+
+&lt;p&gt;When iTunes Match launched, I signed up and removed another 7GB of music from my laptop, which is my only machine. Still, work required me to have a bit more hard drive space, and increasingly needed quick access to my Windows machine for tech suppor.  Running VMWare Fusion over USB was a joke, unusable. So the Nifty seemed like a great way to help my storage needs.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/article_images/2013-02-25-nifty-minidrive/IMG_0001.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The original Nifty project was aiming to be released in November 2012. After it got funded, it slowly became more obvious that they wouldn’t ship on time. Hitting various issues with parts, colour replication, and inferior production meant that by the time the NIfty’s arrived, we were into February 2013.&lt;/p&gt;
+
+&lt;p&gt;ut, despite the delays, its here, and its great. It arrived in this slimline packaging, holding your Nifty drive, and the drive remover nested inside a neat cardboard envelope. One of their emails before shipping warned of tough glue being used in the packaging so removal was a careful process.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/article_images/2013-02-25-nifty-minidrive//IMG_0006.jpg&quot; alt=&quot;&quot; /&gt;
+   &lt;img src=&quot;/assets/article_images/2013-02-25-nifty-minidrive/IMG_0004.jpg&quot; alt=&quot;&quot; /&gt;
+   &lt;img src=&quot;/assets/article_images/2013-02-25-nifty-minidrive/IMG_0005.jpg&quot; alt=&quot;&quot; /&gt;
+   &lt;img src=&quot;/assets/article_images/2013-02-25-nifty-minidrive/IMG_0008.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally getting my Nifty into my MacBook Air was a great moment. I had forgotten what colour I ordered but glad in my choice, as the red looks good. Although all the colours look good. I popped a &lt;a href=&quot;http://www.amazon.co.uk/gp/product/B007JTKLEK/ref=as_li_ss_tl?ie=UTF8&amp;amp;camp=1634&amp;amp;creative=19450&amp;amp;creativeASIN=B007JTKLEK&amp;amp;linkCode=as2&amp;amp;tag=dombarcom-21&quot;&gt;32GB drive from Amazon&lt;/a&gt; into my Nifty and plugged it in.&lt;/p&gt;
+
+&lt;p&gt;When it comes to use, its just what you’d expect. Its a MicroSD card, always mounted and always available. And it sits neatly out of the way so there is one less thing sticking out of my laptop.&lt;/p&gt;
+
+&lt;p&gt;If you spend your time putting your laptop to sleep and waking it throughout the day, either through commuting or just working around the place, then you don’t want to use this for anything that you’d keep open and running. I was planning to put my VMWare image on there but the chance that the drive will unmount while asleep was too much of a risk to break my VM. So I moved my Lightroom library there. You might want to move your iPhoto library, or maybe your Final Cut projects.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: I ran Blackmagic Disk Speed Test on a Class 10 Sandisk MicroSD for read/write speeds. Here is is compared with my internal SSD.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/article_images/2013-02-25-nifty-minidrive/DiskSpeedTest3-ssd.png&quot; alt=&quot;MacBook Air Internal SSD&quot; /&gt; 
+&lt;img src=&quot;/assets/article_images/2013-02-25-nifty-minidrive/DiskSpeedTest2-microsd.png&quot; alt=&quot;Sandisk Class 10 MicroSD via Nifty Drive&quot; /&gt;&lt;br /&gt;
+This summer, I’m hoping to upgrade my laptop. I’m waiting for the next-gen Retina MacBook Pro to come along and I’ll probably pick up a 13” model, and I expect I’ll also get a new Nifty for that one too. Having that instant expandable storage is a saviour for me.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://dombarnes.com/2013/02/25/nifty-minidrive&quot;&gt;Nifty MiniDrive&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://dombarnes.com&quot;&gt;Dom Barnes&lt;/a&gt; on February 25, 2013.&lt;/p&gt;
   </content>
 </entry>
-{% endfor %}
+
+
+<entry>
+  <title type="html"><![CDATA[Personal Debt: End Of Year Wrap Up]]></title>
+  <link rel="alternate" type="text/html" href="http://dombarnes.com/2013/01/16/personal-debt-end-of-year-wrap-up" />
+  <id>http://dombarnes.com/2013/01/16/personal-debt-end-of-year-wrap-up</id>
+  <published>2013-01-16T23:18:43+00:00</published>
+  <updated>2013-01-16T23:18:43+00:00</updated>
+  <author>
+    <name></name>
+    <uri>http://dombarnes.com</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;At the beginning of the year, I started a series of blog posts loosely based on a similar project over on Consumerist Commentary, the idea being to report back on my rather large credit card debt, examining where I’m spending and trying to reduce that where possible.I set the goal of reducing my debt by £3000. In January, this seemed like a stretch goal but one that was at least within the possibility of achieving. As I sit here in January 2013, I can report that I missed my goal by a long shot.&lt;/p&gt;
+
+&lt;p&gt;Take a look at the final results for my debt at the start of December 2012, and then the final results on 31 December.&lt;/p&gt;
+
+&lt;p&gt;So you can clearly see that instead of a healthy £3000 reduction, I’ve managed to increase my debt by £1100. Needless to say I’m not happy but when I reflect on the year it’s clear why.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/personal_debt/debt-dec-2012.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I took a look at my spending this year and categories it. Unsurprisingly the biggest category was car related. As I mentioned earlier this year, I bought a car for work. That’s when it all went wrong.&lt;/p&gt;
+
+&lt;p&gt;I paid too much for the car and very quickly had to fork out £250 for repairs within the first month. During this time I spent two weeks in hospital after some major surgery and then was off work for 6 weeks for recovery. This meant that I wasn’t earning my usual money for two months total and wasn’t claiming any business mileage back to help pay for the car. After my stint in hospital I decided I needed to change what I do and reduce my travel meaning I didn’t need a car. So I sold it, at a bit of a loss, more than I hoped to.&lt;/p&gt;
+
+&lt;p&gt;So let this be a lesson. Cars are REALLY expensive.&lt;/p&gt;
+
+&lt;p&gt;The other big expense category was dining out. I think I spent a out £240 on dining throughout the year (that excludes any business related dining) which is probably a bit too much.&lt;/p&gt;
+
+&lt;p&gt;I’ve come out of 2012 being both unhappy about the results and understanding them. But 2013 had been another change and I really believe I can feasibly clear £1000 in six months. So I will report back later in the year with my progress.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://dombarnes.com/2013/01/16/personal-debt-end-of-year-wrap-up&quot;&gt;Personal Debt: End Of Year Wrap Up&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://dombarnes.com&quot;&gt;Dom Barnes&lt;/a&gt; on January 16, 2013.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Personal Debt - October+November 2012]]></title>
+  <link rel="alternate" type="text/html" href="http://dombarnes.com/2012/11/14/personal-debt-octobernovember-2012" />
+  <id>http://dombarnes.com/2012/11/14/personal-debt-octobernovember-2012</id>
+  <published>2012-11-14T16:44:01+00:00</published>
+  <updated>2012-11-14T16:44:01+00:00</updated>
+  <author>
+    <name></name>
+    <uri>http://dombarnes.com</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;Bit of a slow month on the credit cards for October. Our car was due its second year service which cost £249. Luckily I did some extra work this month which will pay for that and a little bit extra. I’m expecting that will go in mid-November.&lt;/p&gt;
+
+&lt;p&gt;Next month my interest-free period on my Barclaycard expires so I will likely be moving some of that balance elsewhere. I’m not sure yet how much but its possible that will go to my LloydsTSB classic card.&lt;/p&gt;
+
+&lt;p&gt;I closed down my Virgin Money card so I’m now down the four cards, which feels a bit more managable. And since two are just balance transfers, one is clear, and the other is my daily use and business use card, it feels a lot healthier, even though its the same balance.&lt;/p&gt;
+
+&lt;p&gt;One thing I have noticed is that my Numbers spreadsheet is getting progressively slower as I add more content to it. I keep a seperate Sheet for each card, which has a simple table with Date, Description, Amount, Balance and Comments. My Barclaycard also has a Reconciled column which I use to ensure I pay off all my business costs each month. I can simply total the unreconciled columns to make sure they match.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/personal_debt/personal_debt_chart_oct_nov_2012.png&quot; alt=&quot;personal-debt-chart-oct-nov-2012&quot; /&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://dombarnes.com/2012/11/14/personal-debt-octobernovember-2012&quot;&gt;Personal Debt - October+November 2012&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://dombarnes.com&quot;&gt;Dom Barnes&lt;/a&gt; on November 14, 2012.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Personal Debt - September 2012]]></title>
+  <link rel="alternate" type="text/html" href="http://dombarnes.com/2012/09/24/personal-debt-september-2012" />
+  <id>http://dombarnes.com/2012/09/24/personal-debt-september-2012</id>
+  <published>2012-09-24T12:32:58+01:00</published>
+  <updated>2012-09-24T12:32:58+01:00</updated>
+  <author>
+    <name></name>
+    <uri>http://dombarnes.com</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;I managed to miss the 1 September post at the start of the month, when I planned to catch up on August as well. Whoops.&lt;/p&gt;
+
+&lt;p&gt;So what happened this month? Well, I’ve started using my Barclaycard for my business expenses too in an effort to reduce the number of credit cards in use. &lt;br /&gt;
+My balance on the Barclaycard went up when I used it to pay AirBNB for an apartment we stayed in in Edinburgh. My wife and I went with some frieds for a few days at the end of August and found a nice apartment on AirBNB to stay at rather than a hotel. It cost us £25 per person per night, plus booking fee, it was £84 each for the whole trip. A hotel would probably have cost that per night (split between two). I also backed a Kickstarter project (the Nifty Drive).&lt;/p&gt;
+
+&lt;p&gt;Katie and I also celebrated our 1st anniversary and stayed at Wroxall Abbey for a night. Its a mansion home-turned-hotel so was really fancy and costs a fair few quid.&lt;/p&gt;
+
+&lt;p&gt;In September, I signed up for a trial of Experian Credit Expert to take a look at my credit score. I was pleased to see I have a rating of 909 (not sure what the scale is) and only one warning which was to do with the amount of credit I was using out of all available credit. I was amazed to see how much information was on my record. It showed me info on all my existing and previous bank, savings accounts as well as all my credit cards, together with a recently updated balance. It also shows you any companies that have done a credit search on you, and whether it was a full search of just a general check (things like insurance quotes show up here too). After seeing this I made the choice to do my best to clear two of my cards, being the Virgin and the LloydsTSB (the lowest balances). I was able to do this because I also made the decision to sell my car, the one I bought in April. I’ll be posting later about that process. For now, lets say that I got paid cash and some of that went to pay off the Virgin card which I will be cancelling once I’ve had a final zero balance statement.&lt;/p&gt;
+
+&lt;p&gt;I’m continuing to pay off the minimum payment on my CapitalOne card, and a little bit more on my Halifax card. Both these cards have about another year of 0% interest on them so will probably just carry on for a while longer.&lt;/p&gt;
+
+&lt;p&gt;So here’s the final figures for August and September.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/personal_debt/debt_sept_2012.png&quot; alt=&quot;Debt Sept 2012&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;and here is the chart for the year to date:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/personal_debt/chart_sept_2012.png&quot; alt=&quot;Chart Sept 2012&quot; /&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://dombarnes.com/2012/09/24/personal-debt-september-2012&quot;&gt;Personal Debt - September 2012&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://dombarnes.com&quot;&gt;Dom Barnes&lt;/a&gt; on September 24, 2012.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Two Months]]></title>
+  <link rel="alternate" type="text/html" href="http://dombarnes.com/2012/07/08/two-months" />
+  <id>http://dombarnes.com/2012/07/08/two-months</id>
+  <published>2012-07-08T22:19:55+01:00</published>
+  <updated>2012-07-08T22:19:55+01:00</updated>
+  <author>
+    <name></name>
+    <uri>http://dombarnes.com</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;Two months ago, I was lying in a hospital bed, full of anaesthetic and morphine, feeling as low as I have in my life, being fed through a tube. I couldn’t imagine how life was going to be after my surgery. I weighed 8st 6lbs. I couldn’t sleep, had just had the worst nights sleep of my life (I didn’t sleep).&lt;/p&gt;
+
+&lt;p&gt;A week later I was on my way home. I was eating normal meals, taking care of myself, but still scared and worried.&lt;/p&gt;
+
+&lt;p&gt;Two months later I’m back at work. I’ve gained a stone in weight. I’m sleeping better, I can drive. I can sit down and stand up without groaning in pain. My scars are healing and my mood is (mostly) back to normal.&lt;/p&gt;
+
+&lt;p&gt;Yes, I’ve had to make some changes to my life, rethink my future a bit. I never thought I’d have such major surgery at 28, especially when I was feeling mostly healthy. But I guess that’s just life. Things happen, we find a way to get thought it, and come out the other side.  Sounds cliche but it’s kinda true.&lt;/p&gt;
+
+&lt;p&gt;And then, every now and then, my body gives me a little kick in the gut and tells me to slow down. Ow.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://dombarnes.com/2012/07/08/two-months&quot;&gt;Two Months&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://dombarnes.com&quot;&gt;Dom Barnes&lt;/a&gt; on July 08, 2012.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Personal Debt: July 2012]]></title>
+  <link rel="alternate" type="text/html" href="http://dombarnes.com/2012/07/01/personal-debt-july-2012" />
+  <id>http://dombarnes.com/2012/07/01/personal-debt-july-2012</id>
+  <published>2012-07-01T11:00:00+01:00</published>
+  <updated>2012-07-01T11:00:00+01:00</updated>
+  <author>
+    <name></name>
+    <uri>http://dombarnes.com</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;June was an eventful month. I spent it all at home recovering after my stint in hospital. Not being at work meant I saved a lot of money by not buying coffee and breakfast and expensive lunches from the shops near work. However, being on SSP, meant that my income was severely reduced (down to 25%) so any spare money I had went to paying for my usual expenses, like rent, water, gas and electricity, the usual modern comforts.&lt;/p&gt;
+
+&lt;p&gt;My balances adjusted slightly too, as my balance transfer from my Lloyds card went to the Barclaycard to take advantage of the interest-free offer. In total, I paid £243.20 onto my card, which was more than usual as I put a little bit more onto my Lloyds card (because of jump in interest).&lt;/p&gt;
+
+&lt;p&gt;I noticed an interesting point too from this month, around how banks calculate the minimum payment. Most of my cards work on a basis of a percentage of your balance or £5 (which ever is greater). However Lloyds recently changed to the following calculation:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&amp;gt; Total interest + any late fees and charges + 1% of your balance
+&lt;/blockquote&gt;
+
+&lt;p&gt;What this means is that on a balance of £3206, I was paying back £52 worth of interest plus £32.06 plus my late fee, totalling £99. whereas on another card it would be much less. The reality being that as you pay off the interest each month, in my case, towards the end of the month, you’ve already then accrued more interest before your payment is even deducted. So bearing this in mind, I’ll be trying to change all my payments to come out soon after the bill is issued. At least on the accounts where I am paying interest.&lt;/p&gt;
+
+&lt;p&gt;[&lt;img src=&quot;/assets/images/personal_debt/debt_july_2012.png&quot; alt=&quot;Debt July 2012&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And here is a pretty chart showing the progress through the year. I have to admit I like the curve of the Barclaycard line.&lt;/p&gt;
+
+&lt;p&gt;[&lt;img src=&quot;/assets/images/personal_debt/chart_july_2012.png&quot; alt=&quot;Chart July 2012&quot; /&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://dombarnes.com/2012/07/01/personal-debt-july-2012&quot;&gt;Personal Debt: July 2012&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://dombarnes.com&quot;&gt;Dom Barnes&lt;/a&gt; on July 01, 2012.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Personal Debt: May and June 2012]]></title>
+  <link rel="alternate" type="text/html" href="http://dombarnes.com/2012/06/04/personal-debt-may-and-june-2012" />
+  <id>http://dombarnes.com/2012/06/04/personal-debt-may-and-june-2012</id>
+  <published>2012-06-04T17:01:09+01:00</published>
+  <updated>2012-06-04T17:01:09+01:00</updated>
+  <author>
+    <name></name>
+    <uri>http://dombarnes.com</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;Its been over a month since I last posted an update about my finances. The reason was due to a health situation which meant I was in hospital for two weeks and I missed the May update so I’m posting both May and June together in a catch up.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;May 2012&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I’ve incurred a bit expense this month after I made the decision to buy myself a car. I already have a Mazda2 which my wife drives for work and it was becoming clear that I couldn’t keep doing my job with rental cars and train journeys. I found a second hand Toyota Rav4 which I paid for out of my savings but have used my credit card to pay for the insurance. The plan is that I will pay this off with money reclaimed from work for mileage.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/personal_debt/debt-may-2012.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;June 2012&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I managed to pay off a nice chunk of my credit cards, mostly overdue expenses and extra money from the first bit of personal mileage was able to reclaim.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/personal_debt/debt-june-2012.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I don’t expect much change next month. While I won’t incur many expenses, I am on a reduced income due to my recovery so my salary is reduced.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://dombarnes.com/2012/06/04/personal-debt-may-and-june-2012&quot;&gt;Personal Debt: May and June 2012&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://dombarnes.com&quot;&gt;Dom Barnes&lt;/a&gt; on June 04, 2012.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Deploying 101 MacBook Air's]]></title>
+  <link rel="alternate" type="text/html" href="http://dombarnes.com/2012/04/13/deploying-macbook-airs" />
+  <id>http://dombarnes.com/2012/04/13/deploying-macbook-airs</id>
+  <published>2012-04-13T01:00:01+01:00</published>
+  <updated>2012-04-13T01:00:01+01:00</updated>
+  <author>
+    <name></name>
+    <uri>http://dombarnes.com</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;Unsurprisingly, a big part of my job involved deploying new Mac clients and servers to schools and businesses. This week I did my first big deployment of MacBook Air’s into a school.&lt;/p&gt;
+
+&lt;p&gt;Our first plan was to do a manual setup of each device. However this went from having no additional software to requiring Microsoft Office 2011 (and all its updates) and some printer drivers. For 100+ devices, this would add too much time to the process.&lt;/p&gt;
+
+&lt;p&gt;The next plan was use &lt;a href=&quot;http://www.deploystudio.com&quot;&gt;DeployStudio&lt;/a&gt; to run a custom workflow to run the install for Office and its updates, setup a user account, install printer drivers and then bind to OD. In our initial tests, it took about 2 minutes to boot into the DeployStudio NetBoot image. The workflow then took about 6 minutes to run, and this was operating over 802.11n wireless networking. Oddly, using a USB ethernet adapter gave us slower results with almost 3 minutes to boot into NetBoot.&lt;/p&gt;
+
+&lt;p&gt;When we came to run 4 Air’s simultaneously booting to DeployStudio over our wifi (which was an open network provided by an Airport Extreme), we suddenly saw a increase in time to boot, up to 15 minutes to get 4 laptops booted to the point of running the workflow. Our next step, running the workflow, gave flawed results. Due to an error on my part, involving not checking the Automate button in the workflow creator, our workflow processing took a long time. We hit 45 minutes since boot before we realised this issue. Once we did, and manually advanced the workflow, the remaining workflow finished in about another 15 minutes. Its hard to tell how much time was wasted by our stupidity.&lt;/p&gt;
+
+&lt;p&gt;Another odd issue we noticed, even running steps of the workflow such as setting region information and language settings, and configuring the computer information (which should be the case of creating the specific script and copy it to the local hard disk) seemed to take minutes to complete. Once again, once completed, we were unable to login to our laptops with the local user account. Investigation revealed that our Add User setting hadn’t worked and we were left with no way to log in to the machines, without enabling root.&lt;/p&gt;
+
+&lt;p&gt;Needless to say, we quickly aborted this plan in search of another.&lt;/p&gt;
+
+&lt;p&gt;Our final solution was time consuming to set up (given our maximum 4 day schedule). We created a golden master from a new machine, installed Office and all its updated (including the just released SP2), printer drivers, added our Wifi settings (which seemed impossible to do via DeployStudio), ran Software Update and all the other usual tasks of creating a golden master. Once we had that, we created an disk image of it, removed the swap files, and volinfo file. Then compressed it (giving us an 8GB dmg to deploy).&lt;/p&gt;
+
+&lt;p&gt;The final deployment method was interesting. Given the slow nature of USB Ethernet being limited to 100Mbps, and Wifi giving poor test results, we invested in some Thunderbolt Cables. We then did this:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Install &lt;a href=&quot;http://clc.its.psu.edu/UnivServices/itadmins/mac/blastimageconfig&quot;&gt;PSU Blast Image Config&lt;/a&gt; (BIC) on each of the 3 laptops already built.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Setup the Configuration files for our dmg and set to Autorun&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Configure the master laptop to auto login and autorun BIC&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Put that laptop in Target Disk Mode (hold T while booting)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Connect that laptop to an unimaged laptop and boot, holding Option to get the boot picker&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Select our Thunderbolt connected volume&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Let it boot, and auto launch BIC&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;After hitting an error at the image restoring stage, realise we need to unmount the internal volume first&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Put in our admin password and press enter&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Wait. Hit enter to confirm the error about setting the Automatic network settings&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Wait for it to reboot. Unplug Thunderbolt&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;We then had an imaged laptop that just needed renaming to match our labelling system.&lt;/p&gt;
+
+&lt;p&gt;Our final setup stage, binding to OD, we have to do manually. Due to a failed delivery, we still don’t have our server to bind to yet, so we will be doing this via ARD from the server once its arrived.&lt;/p&gt;
+
+&lt;p&gt;How long did this process take? Thunderbolt took as much time as the internal SSD to boot. The image restoration took about 90 seconds to restore our 8GB image and another 45 seconds to verify. The total time from boot to reboot was about 4.5 minutes. With three people working, we imaged 101 MacBook Airs in about 4 hours.&lt;/p&gt;
+
+&lt;p&gt;What does this all mean for future deployments? Well at the moment, there is no practical way to network deploy MacBook Air’s. The lack of ethernet and relatively slow wifi speeds meant we could do one or two simultaneously and it would take perhaps 10 minutes per machine.
+The golden master and a Thunderbolt drive seems the only viable solution here. We lucked out by having enough spare laptops to use those in replace of actual Thunderbolt drives, since these cost £350 for a 120GB drive (from Elgato) but for £40 for a Thunderbolt cable, it made for our best solution.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://dombarnes.com/2012/04/13/deploying-macbook-airs&quot;&gt;Deploying 101 MacBook Air&#39;s&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://dombarnes.com&quot;&gt;Dom Barnes&lt;/a&gt; on April 13, 2012.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Personal Debt: March 2012]]></title>
+  <link rel="alternate" type="text/html" href="http://dombarnes.com/2012/03/01/personal-debt-march-2012" />
+  <id>http://dombarnes.com/2012/03/01/personal-debt-march-2012</id>
+  <published>2012-03-01T00:00:01+00:00</published>
+  <updated>2012-03-01T00:00:01+00:00</updated>
+  <author>
+    <name></name>
+    <uri>http://dombarnes.com</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;With February being a leap month, I took a leap of sorts (well not really, just some creative liberty). I was doing a review of my cards, spurred on by a visit to the bank advisor, and realised that I was being silly having a credit card I was paying 20% on. &lt;br /&gt;
+So with the help of some comparison website, I found out that Halifax was offering 20 months at 0% interest, with a 3.00% transfer fee. So I moved the bulk of the balance from my Barclaycard to Halifax for the benefit. As a result, £2500 went from my Barclaycard to my new Halifax card (which makes an impressive 92% reduction) and thats added as a new line.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/personal_debt/debt_march_2012.png&quot; alt=&quot;Debt March 2012&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The sad news is my Virgin card has gone up a massive 42%. This is mostly due to me being slow to pay off my work expenses. I’ve also ignored my rule and put a few personal expenses on that card. I have also adjusted the figure down by £200 because of a deposit put on there by a hire car company which will be refunded soon.&lt;/p&gt;
+
+&lt;p&gt;So at the moment, the reduction looks good. But as mentioned, that 21% doesn’t include the balance transfer which should show properly next month.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://dombarnes.com/2012/03/01/personal-debt-march-2012&quot;&gt;Personal Debt: March 2012&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://dombarnes.com&quot;&gt;Dom Barnes&lt;/a&gt; on March 01, 2012.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Personal Debt: February 2012]]></title>
+  <link rel="alternate" type="text/html" href="http://dombarnes.com/2012/02/01/personal-debt-february-2012" />
+  <id>http://dombarnes.com/2012/02/01/personal-debt-february-2012</id>
+  <published>2012-02-01T00:00:00+00:00</published>
+  <updated>2012-02-01T00:00:00+00:00</updated>
+  <author>
+    <name></name>
+    <uri>http://dombarnes.com</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;Month Two! Thing haven’t gone quite as well as I hoped this month.
+Both my Virgin credit card (for work) and Barclaycard went up in balance by 4.97% (£495). This is for a single reason, that being that I have dont a few days work this month away from Birmingham. As a result, I have put on travel expenses, and also was eating out a bit more than I hoped. Since I can’t claim back all my meals from work, I put some of the meal costs on my personal credit card.&lt;/p&gt;
+
+&lt;p&gt;In the next week or so, I’ll be refunding some money on my Virgin card, which should reduce the balance on that.&lt;/p&gt;
+
+&lt;p&gt;Another change is that I am going to be cancelling my Barclaycard. While it has the lowest rate of interest, it has a significant balance on it and it makes sense to move it to an Interest-Free card. So I’ve applied for a Halifax Credit Card, which currently offers 20 months interest-free, with around a 3% balance transfer charge. This means I’ll be paying about £80 in fees, but since my interest is around £45 per month, I will recover that in two months, leaving 18 interest-free to help reduce the debts.&lt;/p&gt;
+
+&lt;p&gt;The scary thing is that for a time, I will have 5 credit cards. But its only for a week or two.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/personal_debt/debt_february_2012.png&quot; alt=&quot;February 2012 Debt Table&quot; /&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://dombarnes.com/2012/02/01/personal-debt-february-2012&quot;&gt;Personal Debt: February 2012&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://dombarnes.com&quot;&gt;Dom Barnes&lt;/a&gt; on February 01, 2012.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Personal Debt: January 2012]]></title>
+  <link rel="alternate" type="text/html" href="http://dombarnes.com/2012/01/01/personal-debt-january-2012" />
+  <id>http://dombarnes.com/2012/01/01/personal-debt-january-2012</id>
+  <published>2012-01-01T16:19:31+00:00</published>
+  <updated>2012-01-01T16:19:31+00:00</updated>
+  <author>
+    <name></name>
+    <uri>http://dombarnes.com</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;Welcome to the first installment of my personal debt posts as I account for my spending and attempt to reduce my debt by £3000 in 2012.
+With this being January, I have taken balances as of the 1st, and will continue to do so each month.&lt;/p&gt;
+
+&lt;p&gt;To summise, I currently have 4 credit cards, each with a balance on them. One of these, a Virgin Money card, is almost clear, and is intended to be useds for business expenses and should be paid off each month. However I am including this for completeness, and ot show I’m not just accumulating more debt elsewhere.&lt;/p&gt;
+
+&lt;p&gt;In addition to these four cards, I also have a loan on my car, which is being paid off over a fixed period of 5 years, and accounts for £166 of my outgoings each month. This is not going to be included on my report.&lt;/p&gt;
+
+&lt;p&gt;So with this, please find below the details for January 2012. I will be showing a breakdown by card, totals and percentage changes, month on month. Clearly for January, this is 0% as I am counting from today.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/personal_debt/debt_january_2012.png&quot; alt=&quot;January 2012 Debt Table&quot; /&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://dombarnes.com/2012/01/01/personal-debt-january-2012&quot;&gt;Personal Debt: January 2012&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://dombarnes.com&quot;&gt;Dom Barnes&lt;/a&gt; on January 01, 2012.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Debt Reduction in public]]></title>
+  <link rel="alternate" type="text/html" href="http://dombarnes.com/2012/01/01/debt-reduction-in-public" />
+  <id>http://dombarnes.com/2012/01/01/debt-reduction-in-public</id>
+  <published>2012-01-01T16:09:16+00:00</published>
+  <updated>2012-01-01T16:09:16+00:00</updated>
+  <author>
+    <name></name>
+    <uri>http://dombarnes.com</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;A few years ago I came across &lt;a href=&quot;http://www.consumerismcommentary.com/category/monthly-update/&quot;&gt;Consumerism Commentary&lt;/a&gt; and the monthly updates. The writer, &lt;a href=&quot;http://twitter.com/flexo&quot;&gt;Flexo&lt;/a&gt;, was being public about his income and expenditure, and posting his monthly balance sheets to his blog as a way of being publicly accountable for his spending. He started in 2003, and recently stopped posting these in October of 2011.
+As many other people in the UK do, have a growing amount of debt in my life and want to reduce this to zero. I know thats a big task to accomplish, and will take me a long time, but I decided I wanted ot share my progress online.&lt;/p&gt;
+
+&lt;p&gt;Unlike Flexo, I’ll only be posting the monthly changes in my credit card balances. I have some additional debt, which I’ll detail in the first of the series, which I won’t cover, since its pre-determined in its type.&lt;/p&gt;
+
+&lt;p&gt;My goal is reduce overall debt by £3000 by the end of they year.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://dombarnes.com/2012/01/01/debt-reduction-in-public&quot;&gt;Debt Reduction in public&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://dombarnes.com&quot;&gt;Dom Barnes&lt;/a&gt; on January 01, 2012.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[365 Days ago...]]></title>
+  <link rel="alternate" type="text/html" href="http://dombarnes.com/2010/02/21/365-days-ago" />
+  <id>http://dombarnes.com/2010/02/21/365-days-ago</id>
+  <published>2010-02-21T00:13:40+00:00</published>
+  <updated>2010-02-21T00:13:40+00:00</updated>
+  <author>
+    <name></name>
+    <uri>http://dombarnes.com</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;…I started this project on Flickr and it finally comes to an end. Its been fun. Its been hardwork. I’ve been late uploading, sometimes very late.
+And this is the final piece&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/domster83/4375590210/&quot;&gt;&lt;img src=&quot;http://farm5.static.flickr.com/4013/4375590210_a2b9deb135.jpg&quot; alt=&quot;Day 365&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;So how about some stats for the project?&lt;/p&gt;
+
+&lt;p&gt;Started on 2 January 2009
+Finished on 10 February 2010
+365 photos (obviously)
+61 in black and white
+26 outside
+5 in New York, New York
+Took over 1600 photos
+7 with Katie
+4 with mirrors&lt;/p&gt;
+
+&lt;p&gt;I had a lot of fun. Hope others did too.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://dombarnes.com/2010/02/21/365-days-ago&quot;&gt;365 Days ago...&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://dombarnes.com&quot;&gt;Dom Barnes&lt;/a&gt; on February 21, 2010.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Guide to New York]]></title>
+  <link rel="alternate" type="text/html" href="http://dombarnes.com/2009/06/01/guide-to-new-york" />
+  <id>http://dombarnes.com/2009/06/01/guide-to-new-york</id>
+  <published>2009-06-01T17:00:23+01:00</published>
+  <updated>2009-06-01T17:00:23+01:00</updated>
+  <author>
+    <name></name>
+    <uri>http://dombarnes.com</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;As mentioned in my earlier post, I spent a week in New York last month. It was an awesome experience and I loved every minute, despite some rather crappy weather.I figured it might be useful for some people to pass on some travel tips or advice as I had some good input from a few good &lt;a href=&quot;http://twitter.com/povester&quot;&gt;people&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Travel Details&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I booked my flights and hotels individually as I couldn’t find any decent package deals that suited our length of stay and travel dates. It seemed to be cheapest for us to travel on a Saturday evening, and we stayed for 5 nights.&lt;em&gt;**&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Flights&lt;/strong&gt;: I booked them online direct through American Airlines’ website. It was easy enough to do.  You are given a choice of seats in coach, and using &lt;a href=&quot;http://www.seatguru.com&quot;&gt;SeatGuru.com&lt;/a&gt;, I chose the apparent best seats available. We sat near the back, in the first row of 4 seats in the middle. It means your screen and table are in the seat arm rest, which is kinda nice, although my iPhone headphones didn’t work with the headphone socket. Meals were average, expected for coach travel, so you may want to bring something yourself.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Hotels&lt;/strong&gt;: I booked mine on &lt;a href=&quot;http://Expedia.co.uk&quot;&gt;Expedia.co.uk&lt;/a&gt;, getting &lt;a href=&quot;http://www.nectar.com&quot;&gt;Nectar &lt;/a&gt;points in the process. We stayed at the new Holiday Inn in Long Island, on 29th St. Its about a 10 minute subway trip into Manhattan, only a few minutes walk from 39th Avenue stop on the N/W lines.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Getting Around&lt;/strong&gt;: We opted for the $25 week-long travel card when we arrived, and certainly got our use out of it. The subways are clean, and were surprisingly pleasant. Carriages seemed more spacious than the London Underground, and people were all kind. We only took a taxi ride once, mainly to avoid getting drenched by rain late at night. I think the cost was fairly reasonable considering we drove from the East Village, over to Queens/Long Island.
+We also did a fair amount of walking around the city, rather than getting the subway a few blocks. It wasn’t too bad at all. Once you work out which direction the roads go, navigating gets easier. Best to remember avenues run north to south, and streets run east to west.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Airport Travel&lt;/strong&gt;: We drive to Heathrow, parked at a nearby airport parking place, for £53 for the whole trip. They provided a coach to your terminal, and picked you up when you get back.  We flew to JFK, and from there, once through border control (having an photo and thumbprint taken) we rode the Airtrain ($5) to Jamaica Central where we caught the “E” to Queens Plaza. This dropped us on 35th Av/29th Street so it was a few blocks walk to the hotel from there. We did the same going back, although when we go again, we’ll probably get a taxi to the airport as we were supporting a few extra bags, and pretty worn out.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Attractions&lt;/strong&gt;: We went to the Empire State Building (nice views, long queues, as in 5 before you even got upstairs), Museum of Modern Art (bit of a disappointment for us) , American Museum of Natural History (nothing like Night at the Museum but still very good), walked through Central Park, took the Staten Island Ferry to see the Statue of Liberty (free), walked down 5th Avenue and did some shopping, went to Times Square, Macy’s, Bloomingdale’s, 2 of the 3 Crumpler shops, went to the financial district and saw the site of the Two Towers, and probably some other stuff I forget. Overall, most stuff was good. The ESB was $20 per person, and offered audio tours. We didn’t bother as we just wanted to see the city. The MoMA was too modern and irreverant for my tastes, although the photography section was good. Central Park was gorgeous. It was totally safe, really nice, and we stopped for a drink and snack by one of the lakes.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Meals&lt;/strong&gt;: We ate breakfast at the hotel about 4 times, which cost about $30 a day for the two of us. Not particularly cheap but it was good food. We had a lot of quick foods for lunch, ate at the Candle 79 vegan restaurant one night. They were really pleasent and very accomodating to us, and other patrons. Not a bad word to say about them.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tips&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Plan your journey from the airport to your hotel. Find the local subways stations, and if its more than a few blocks, get a taxi. We wasted 20 mins going in the wrong direction before finding the right road to get to our hotel&lt;/li&gt;
+  &lt;li&gt;Buy a travel card. It will save you money.&lt;/li&gt;
+  &lt;li&gt;Don’t believe all New Yorkers are rude and in a hurry. Everyone we met was kind and friendly, and really helpful to everyone. Someone stopped in the street to ask if we were lost. Lovely people.&lt;/li&gt;
+  &lt;li&gt;Get a Travel Money Card from the Post Office. Its easier and quicker than Travellers Cheques. And take some cash with you. You’ll need it for the Airtrain/Subway.&lt;/li&gt;
+  &lt;li&gt;Get a decent map.&lt;/li&gt;
+  &lt;li&gt;Plan where the things you wanna see are, and plan days around particular areas. We spent a lot of time going from one part of the city to another.&lt;/li&gt;
+  &lt;li&gt;Don’t forget the prices you see are EXCLUDING sales tax. This is about 8% so you need to take that into account.&lt;/li&gt;
+  &lt;li&gt;Tips. Tipping is fairly generous so read online or in a proper guide to learn the right tipping etiquite.&lt;/li&gt;
+  &lt;li&gt;Plan at least 5 nights. Since we arrived so late, we pretty much had 4 and a half days for a 5 night stay.&lt;/li&gt;
+  &lt;li&gt;Have fun. Don’t try to carry too much. Drink plenty.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;So thats about it.  Let me know if you have any other questions. But you will love it, and like us, probably want to go back really soon!&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://dombarnes.com/2009/06/01/guide-to-new-york&quot;&gt;Guide to New York&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://dombarnes.com&quot;&gt;Dom Barnes&lt;/a&gt; on June 01, 2009.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[HOWTO: Install a WIM Image in VMWare Fusion]]></title>
+  <link rel="alternate" type="text/html" href="http://dombarnes.com/2009/03/17/howto-install-a-wim-image-in-vmware-fusion" />
+  <id>http://dombarnes.com/2009/03/17/howto-install-a-wim-image-in-vmware-fusion</id>
+  <published>2009-03-17T21:32:46+00:00</published>
+  <updated>2009-03-17T21:32:46+00:00</updated>
+  <author>
+    <name></name>
+    <uri>http://dombarnes.com</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;My company builds their machines based on a USB rebuild solution, applying a Windows WIM image with Windows PE. I wanted to get this into a VMWare Fusion VM. After some googling, I managed to get it working, and here is how. My main resource was &lt;a href=&quot;O2UKOfficial@markperera We are working with Apple on tethering, but we&#39;re not making any announcements yet.&quot;&gt;this invaluable page&lt;/a&gt;. I have put my steps here for clarity.
+1. Follow the instructions &lt;a href=&quot;http://www.svrops.com/svrops/articles/winvistape2.htm&quot;&gt;here&lt;/a&gt; for creating a Windows PE boot disc. You will need a Windows system to create this with. Unfortunately the file resultant ISO file is 180MB, not really suitable to share here.
+2. Get your WIM image on a USB drive.
+3. Create you VM, selecting the appropriate OS, in my case, XP. Use the ISO image you created in step 1 as the install media.
+4. Start up your VM and wait to be presented by a command prompt.
+5. Type &lt;em&gt;DISKPART&lt;/em&gt; to start the disk partition tool. Type the following commands&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;list disk
+sel dis 0
+clean
+create part pri size=30000&lt;/em&gt; (for 30GB, change as necessary)
+&lt;em&gt;ass letter=c
+format fs=ntfs label=XP quick
+act
+exit&lt;/em&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Next you need to insert the USB drive with your WIM image on. And we need to go back into &lt;em&gt;DISKPART&lt;/em&gt;. You need to assign a letter to your partition on the drive. So do this&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;list disk
+&lt;em&gt;sel dis 1&lt;/em&gt; (confirm disk number from list disk command)
+&lt;em&gt;list vol&lt;/em&gt;
+&lt;em&gt;sel vol 3&lt;/em&gt; (in my case, my partition on the drive was 3)
+&lt;em&gt;ass letter=m
+exit&lt;/em&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Back at the command prompt, you can now begin applying the WIM to your VM. Type the following command, inserting your own wim file name where I put in filename.wim
+&lt;em&gt;imagex  /apply m:filename.wim 1 c: /verify&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The variables for this are of course your wim file name, the destination drive should usually be C:, and the “1” is the index number on your wim. This is likely to be 1 but if you are unsure or have issues, refer to the &lt;a href=&quot;http://technet.microsoft.com/en-us/library/cc722145.aspx&quot;&gt;Microsoft Support&lt;/a&gt; pages.&lt;/p&gt;
+
+&lt;p&gt;Then, give it about 10 minutes to apply your WIM and once done, type “exit” to reboot the system. You will probably need to shutdown the VM when it reboots, to allow you to remove the ISO image which will be attached to the VM as a physical disc. Once that is out, reboot and make sure you’re plugged into your company network if needed, and that the networking mode is Bridged. This will give your VM a physical IP address from the DHCP server, rather than using NAT routing to reuse the IP address of your Mac.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://dombarnes.com/2009/03/17/howto-install-a-wim-image-in-vmware-fusion&quot;&gt;HOWTO: Install a WIM Image in VMWare Fusion&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://dombarnes.com&quot;&gt;Dom Barnes&lt;/a&gt; on March 17, 2009.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[All Time Faves Playlist]]></title>
+  <link rel="alternate" type="text/html" href="http://dombarnes.com/2009/03/17/all-time-faves-playlist" />
+  <id>http://dombarnes.com/2009/03/17/all-time-faves-playlist</id>
+  <published>2009-03-17T20:45:53+00:00</published>
+  <updated>2009-03-17T20:45:53+00:00</updated>
+  <author>
+    <name></name>
+    <uri>http://dombarnes.com</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;During my job I make a lot of trips to Oxford on a bi-weekly basis and it was only this week that I actually bothered to put on my “All Time Faves” playlist to listen to. And I thought I would share it here.
+The history of this actually goes back to an iPod leaflet I picked up in John Lewis in Norwich one time while walking past their Apple selection. On their screenshot of iTunes, they had a “All Time Faves” playlist, which I stole and adjusted to create this.
+iTunes links are provided where available&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Alanis Morissette - Hands Clean &lt;a href=&quot;http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?i=45435007&amp;amp;id=45434999&amp;amp;s=143444&quot;&gt;[iTunes]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Avril Lavigne - Don’t Tell Me &lt;a href=&quot;http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?i=281058654&amp;amp;id=281058642&amp;amp;s=143444&quot;&gt;[iTunes]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Barenaked Ladies - Aluminum &lt;a href=&quot;http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?i=3063725&amp;amp;id=3064016&amp;amp;s=143444&quot;&gt;[iTunes]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Blink 182 - Here’s Your Letter &lt;a href=&quot;http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?i=14190130&amp;amp;id=14190125&amp;amp;s=143444&quot;&gt;[iTunes]&lt;/a&gt;
+5.Box Car Racer - There Is &lt;a href=&quot;http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?i=14924667&amp;amp;id=14924629&amp;amp;s=143444&quot;&gt;[iTunes]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Busted - Meet You There &lt;a href=&quot;http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?i=14190571&amp;amp;id=14190527&amp;amp;s=143444&quot;&gt;[iTunes]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;The Calling - Adrienne &lt;a href=&quot;http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?i=271870175&amp;amp;id=271870087&amp;amp;s=143444&quot;&gt;[iTunes]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Dashboard Confessional - Hands Down &lt;a href=&quot;http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?i=13125588&amp;amp;id=13125496&amp;amp;s=143444&quot;&gt;[iTunes]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Dashboard Prophets - All You Want&lt;/li&gt;
+  &lt;li&gt;Death Cab For Cutie - Summer Skin &lt;a href=&quot;http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?i=79018929&amp;amp;id=79018972&amp;amp;s=143444&quot;&gt;[iTunes]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Dido - White Flag &lt;a href=&quot;http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?i=260541480&amp;amp;id=260541465&amp;amp;s=143444&quot;&gt;[iTunes]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Fastball - Fire Escape&lt;/li&gt;
+  &lt;li&gt;Goo Goo Dolls - Slide &lt;a href=&quot;http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?i=175276&amp;amp;id=175302&amp;amp;s=143444&quot;&gt;[iTunes]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Guster - Amsterdam &lt;a href=&quot;http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?i=1586598&amp;amp;id=1586602&amp;amp;s=143444&quot;&gt;[iTunes]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Hoobastank - The Reason &lt;a href=&quot;http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?i=41773064&amp;amp;id=41773062&amp;amp;s=143444&quot;&gt;[iTunes]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Incubus - Talk Shows On Mute &lt;a href=&quot;http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?i=204113227&amp;amp;id=204113115&amp;amp;s=143444&quot;&gt;[iTunes]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Less Than Jake - Look What Happened &lt;a href=&quot;http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?i=209855819&amp;amp;id=209855746&amp;amp;s=143444&quot;&gt;[iTunes]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Lostprophets - Last Summer &lt;a href=&quot;http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?i=206816788&amp;amp;id=206816693&amp;amp;s=143444&quot;&gt;[iTunes]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Mark Owen - Four Minute Warning &lt;a href=&quot;http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?i=15066546&amp;amp;id=15066544&amp;amp;s=143444&quot;&gt;[iTunes]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Michelle Branch - All You Wanted &lt;a href=&quot;http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?i=1093083&amp;amp;id=1093087&amp;amp;s=143444&quot;&gt;[iTunes]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;OutKast - Hey Ya &lt;a href=&quot;http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?i=281430764&amp;amp;id=281430653&amp;amp;s=143444&quot;&gt;[iTunes]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Robbie Williams - Feel &lt;a href=&quot;http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?i=15784346&amp;amp;id=15784516&amp;amp;s=143444&quot;&gt;[iTunes]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Ryan Adams - New York, New York &lt;a href=&quot;http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?i=14183865&amp;amp;id=14183854&amp;amp;s=143444&quot;&gt;[iTunes]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Semisonic - Secret Smile &lt;a href=&quot;http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?i=14183865&amp;amp;id=14183854&amp;amp;s=143444&quot;&gt;[iTunes]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Smashing Pumpkins - 1979 &lt;a href=&quot;http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?i=55265111&amp;amp;id=55265153&amp;amp;s=143444&quot;&gt;[iTunes]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Sponge - All This And Nothing&lt;/li&gt;
+  &lt;li&gt;The Starting Line - Best Of Me &lt;a href=&quot;http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?i=14788151&amp;amp;id=14788137&amp;amp;s=143444&quot;&gt;[iTunes]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Steriogram - Walkie Talkie Man &lt;a href=&quot;http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?i=24317084&amp;amp;id=24317106&amp;amp;s=143444&quot;&gt;[iTunes]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Superfine - Betsy Went Flying &lt;a href=&quot;http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?i=4465022&amp;amp;id=4465039&amp;amp;s=143444&quot;&gt;[iTunes]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Tenacious D - Tribute &lt;a href=&quot;http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?i=202856156&amp;amp;id=202855977&amp;amp;s=143444&quot;&gt;[iTunes]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;U2 - Beautiful Day &lt;a href=&quot;http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?i=14888278&amp;amp;id=14888276&amp;amp;s=143444&quot;&gt;[iTunes]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;The Vines - Ride &lt;a href=&quot;http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?i=16394452&amp;amp;id=16394598&amp;amp;s=143444&quot;&gt;[iTunes]&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;You can now get the whole playlist (minus a few tracks) in an iMix on iTunes. &lt;a href=&quot;http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewIMix?id=308901600&quot;&gt;Get It Here&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://dombarnes.com/2009/03/17/all-time-faves-playlist&quot;&gt;All Time Faves Playlist&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://dombarnes.com&quot;&gt;Dom Barnes&lt;/a&gt; on March 17, 2009.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Review: Crumpler CheesyTina]]></title>
+  <link rel="alternate" type="text/html" href="http://dombarnes.com/2008/11/01/review-crumpler-cheesytina" />
+  <id>http://dombarnes.com/2008/11/01/review-crumpler-cheesytina</id>
+  <published>2008-11-01T07:52:00+00:00</published>
+  <updated>2008-11-01T07:52:00+00:00</updated>
+  <author>
+    <name></name>
+    <uri>http://dombarnes.com</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;You may have read in a previous post that I bought my first proper Crumpler bag, the CheeseyTina. I’ve been living with this bag, day in and day out for about a month now and its about time to post some views on it.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Size and Storage&lt;/strong&gt;&lt;br /&gt;
+This bag is deceptively spacious. On the outside it actually looks smaller than my previous messenger bag. But it lies. Inside is a cavernous space that can house every-single-thing you may want to bring with you. There are 3 main compartments. The front is secured with a tough zip, housing 3 separate storage bits. One, obviously designed for a mobile phone, one with 4 holes for pens/pencils/straws if you fancy, and the last is a generic mesh-front pouch for anything.&lt;br /&gt;
+The middle is a semi-open area, with 2 generic squarish compartments, and a thinner pouch that attaches to the middle flap (see below). There are also two stitched-in pouches facing the back of the bag. all of these are very well sized, enough to fit a CD case, a moleskine, and a few USB drives.
+The back compartment can serve as a large open compartment, or coupled with the additional laptop bag, can be your laptop storage. Here is where Crumpler are genius. What if you want a laptop bag during the week, but don’t need your laptop at weekends. Rather than having a dedicated laptop pouch that isn’t ideal for the weekend items (camera, shopping, food and drink), you get this wonderful envelope that you can just pull out when you don’t need it. Its very well padded, keeping your pride and joy safe and sound, without being too bulky at all.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Comfort&lt;/strong&gt;&lt;br /&gt;
+Being a standard shoulder bag, you are stuck having the weight of your bag and its contents on one shoulder, but with the added shoulder support on the CheeseyTina, the weight seems not so bad. It makes the bag a lot more friendly to your aching shoulders, which means that you won’t be complaining after an hour about how heavy it is. Even with a full 15” laptop like me, the weight hardly seems noticeable.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Style&lt;/strong&gt;&lt;br /&gt;
+There is no doubting that the CheeseyTina is a gorgeous bag, not too understated, and not too boring. Even better, despite being a fantastic laptop bag, it doesn’t wreek of those horrible generic laptop bags from Dell or IBM. Its cool, hip, and of course, makes you less of a target for theives (of laptops at least)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Price&lt;/strong&gt;&lt;br /&gt;
+Crumpler bags are usually fairly expensive. However you can easily argue that they are more than worth their pricetag. But if you look around, you can pick up a decent price on one, as I did, getting this for a mere £30 plus shipping.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://dombarnes.com/2008/11/01/review-crumpler-cheesytina&quot;&gt;Review: Crumpler CheesyTina&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://dombarnes.com&quot;&gt;Dom Barnes&lt;/a&gt; on November 01, 2008.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[CheesyTina]]></title>
+  <link rel="alternate" type="text/html" href="http://dombarnes.com/2008/10/28/cheesytina" />
+  <id>http://dombarnes.com/2008/10/28/cheesytina</id>
+  <published>2008-10-28T23:19:19+00:00</published>
+  <updated>2008-10-28T23:19:19+00:00</updated>
+  <author>
+    <name></name>
+    <uri>http://dombarnes.com</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;When it comes to bags, there are a few big names. Louis Vitton, Gucci, Prada, Toki Doki, Birkin, but none of these have the eccentric names that Crumpler bring to the table.
+The &lt;a href=&quot;http://www.crumpler.co.uk/?product=Cheesy_Chick_+_Cheesytina&amp;amp;page=details&amp;amp;product_id=CHT13-004&amp;amp;size=&quot;&gt;CheesyTina&lt;/a&gt; is my first (well second really) foray into Crumpler bags but I’ve coveted them, just like Jesus told me to, for a while. This usually comes from spending an hour looking at &lt;a href=&quot;http://flickr.com/tags/whatsinmybag&quot;&gt;whatsinmybag&lt;/a&gt; tagged photos on Flickr and lusting over each bag. But the time came for me to roll my tongue back up into my mouth and fork over the cold hard cash.&lt;/p&gt;
+
+&lt;p&gt;Thanks to the kind people at &lt;a href=&quot;http://devoncamera.co.uk/&quot;&gt;Devon Cameras&lt;/a&gt;, I picked up the Crumpler CheesyTina for a mere £29.95 (plus shipping) which is a utter bargin! I was all set for a trip to the Crumpler shop in London and to cough up £80+.&lt;/p&gt;
+
+&lt;p&gt;Why did I choose this bag? Well its all thanks to one man. Benjamin Stanley. After a rather sucessfuly &lt;a href=&quot;http://www.mmug.org.uk&quot;&gt;MMUG&lt;/a&gt; session at the Solihull Apple Store, a few elite mac geeks went to Pizza Hut Pasta Hut. And it was in this establishment that I spotted Ben’s own CheesyTina and made my enquiries. After a quick guided tour of the pockets and pouches and the ample laptop area, I was sold.&lt;/p&gt;
+
+&lt;p&gt;That night I placed my order and waited. Today it arrived, much to my gross excitement, and I can now present the first unboxing shots.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/cimg0296.jpg&quot; alt=&quot;Unboxing&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As you may notice, the packaging left a lot to be desired. Compared to my other bag (a Pretty Boy camera bag) it was starkers! No Crumpler cellophane at all!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/cimg0298.jpg&quot; alt=&quot;The CheesyTina&quot; /&gt;
+The CheesyTina (Full Frontal)&lt;/p&gt;
+
+&lt;p&gt;Here it is, in all its free-from-a-box glory, waiting to be filled!. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/cimg0299.jpg&quot; alt=&quot;Exploded CheesyTina&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Exhibit C: The removeable Laptop Case, to fit a mac up to 15”  (yes it first 15.4” widescreens)&lt;/p&gt;
+
+&lt;p&gt;I intend on doing a full review, with an indepth tour, and accompanying Flickr set, but need to give it a solid test run with its contents to see how I get on, then I’ll be contributing my own whatsinmybag photo to the pool.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://dombarnes.com/2008/10/28/cheesytina&quot;&gt;CheesyTina&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://dombarnes.com&quot;&gt;Dom Barnes&lt;/a&gt; on October 28, 2008.&lt;/p&gt;
+  </content>
+</entry>
+
 </feed>
