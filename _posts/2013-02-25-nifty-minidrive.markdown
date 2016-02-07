@@ -1,6 +1,6 @@
 ---
 
-comments: false
+comments: true
 date: 2013-02-25 12:34:23+00:00
 layout: post
 slug: nifty-minidrive
