@@ -31,7 +31,7 @@ author_image: "/assets/images/author.jpg"
 
 paginate:	8
 # paginate_path: /page:num
-permalink: /:year/:month/:day/:title
+permalink: /:title
 timezone:    Europe/London
 
 
