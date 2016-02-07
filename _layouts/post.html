@@ -88,10 +88,8 @@
             </footer>
           </div>
         </div>
-        {% if post.comments %}
-          {% if site.disqus %}
-            {% include disqus.html %}
-          {% endif %}
+        {% if site.disqus %}
+          {% include disqus.html %}
         {% endif %}
       </article>
     </main>
