@@ -35,7 +35,7 @@ permalink: /:year/:month/:day/:title
 timezone:    Europe/London
 
 
-url: "http://dombarnes.com" # the base hostname & protocol for your site
+url: "http://www.dombarnes.com" # the base hostname & protocol for your site
 baseurl: ""
 #used to display twitter cards
 twitter_handle: '@domster'
