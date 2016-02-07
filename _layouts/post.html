@@ -89,9 +89,7 @@
           </div>
         </div>
         {%if site.disqus %}
-          {% if jekyll.environment == "production" %}
-             {% include disqus.html %}
-          {% endif %}
+          {% include disqus.html %}
         {% endif %}
       </article>
     </main>
