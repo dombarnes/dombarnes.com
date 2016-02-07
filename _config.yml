@@ -3,6 +3,7 @@ gems:
   - jemoji
   - jekyll-paginate
   - jekyll-sitemap
+  - kramdown
 
 exclude:
   - config.ru
@@ -34,14 +35,13 @@ paginate:	8
 permalink: /:title/
 timezone:    Europe/London
 
-
 url: "http://www.dombarnes.com" # the base hostname & protocol for your site
 baseurl: ""
 #used to display twitter cards
 twitter_handle: '@domster'
 
 #fill in disqus shortname to use disqus
-disqus: dombarnes
+disqus: domster83
 
 # social icons and sharing options
 social:
