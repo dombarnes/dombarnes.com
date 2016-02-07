@@ -49,8 +49,7 @@ exit
 7. Back at the command prompt, you can now begin applying the WIM to your VM. Type the following command, inserting your own wim file name where I put in filename.wim
 {% highlight powershell %}
 imagex  /apply m:filename.wim 1 c: /verify
-{% endhighlands %}
-
+{% endhighlight %}
 
 The variables for this are of course your wim file name, the destination drive should usually be C:, and the "1" is the index number on your wim. This is likely to be 1 but if you are unsure or have issues, refer to the [Microsoft Support](http://technet.microsoft.com/en-us/library/cc722145.aspx) pages.
 
