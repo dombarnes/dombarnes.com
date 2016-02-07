@@ -4,7 +4,6 @@ gems:
   - jekyll-paginate
   - jekyll-sitemap
   - kramdown
-  - rack-rewrite
 
 exclude:
   - config.ru
