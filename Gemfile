@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
-# 'github-pages' includes 'jekyll' gem 
-gem 'github-pages'
+gem 'jekyll', '~> 3.1.0'
 gem 'bourbon'
 gem 'jemoji'
 gem 'puma'
@@ -10,3 +9,4 @@ gem 'rack-cache'
 gem 'rake'
 gem 'kramdown'
 gem 'jekyll-sitemap'
+gem 'jekyll-paginate'
