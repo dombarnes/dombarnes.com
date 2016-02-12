@@ -4,6 +4,7 @@ date: 2013-02-25 12:34:23+00:00
 layout: post
 slug: nifty-minidrive
 title: Nifty MiniDrive
+tags: featured
 ---
 
 In July 2012, I backed my first Kickstarter, the Nifty Drive. The idea is simple. A MicroSD to SD adapter designed to fit perfectly in the MacBook Air, or Pro laptop.
