@@ -19,7 +19,7 @@ The original Nifty project was aiming to be released in November 2012. After it 
 
 ut, despite the delays, its here, and its great. It arrived in this slimline packaging, holding your Nifty drive, and the drive remover nested inside a neat cardboard envelope. One of their emails before shipping warned of tough glue being used in the packaging so removal was a careful process.
 
-   ![](/assets/article_images/2013-02-25-nifty-minidrive//IMG_0006.jpg)
+   ![](/assets/article_images/2013-02-25-nifty-minidrive/IMG_0006.jpg)
    ![](/assets/article_images/2013-02-25-nifty-minidrive/IMG_0004.jpg)
    ![](/assets/article_images/2013-02-25-nifty-minidrive/IMG_0005.jpg)
    ![](/assets/article_images/2013-02-25-nifty-minidrive/IMG_0008.jpg)
