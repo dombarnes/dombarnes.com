@@ -5,9 +5,7 @@ date: 2010-02-21 00:13:40+00:00
 layout: post
 slug: 365-days-ago
 title: 365 Days ago...
-wordpress_id: 56
-categories:
-- misc
+tags: featured
 ---
 
 ...I started this project on Flickr and it finally comes to an end. Its been fun. Its been hardwork. I've been late uploading, sometimes very late.
