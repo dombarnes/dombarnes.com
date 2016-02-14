@@ -1,0 +1,7 @@
+---
+---
+User-agent: *
+Disallow: /css
+Disallow: /js
+Disallow: /assets
+Sitemap: {{ site.url }}/sitemap.xml
