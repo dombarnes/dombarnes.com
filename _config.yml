@@ -12,6 +12,7 @@ exclude:
   - vendor
   - Procfile
   - Rakefile
+  - s3_website.yml
 
 markdown: kramdown
 
