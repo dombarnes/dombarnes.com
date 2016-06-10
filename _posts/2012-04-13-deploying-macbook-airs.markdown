@@ -5,7 +5,7 @@ date: 2012-04-13 00:00:01+00:00
 layout: post
 slug: deploying-macbook-airs
 title: Deploying 101 MacBook Air's
-wordpress_id: 30
+author: dombarnes
 categories:
 - apple
 - work

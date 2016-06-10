@@ -6,6 +6,7 @@ date: 2012-09-24 11:32:58+00:00
 layout: post
 slug: personal-debt-september-2012
 title: Personal Debt - September 2012
+author: dombarnes
 categories:
 - personal debt
 ---

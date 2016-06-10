@@ -5,7 +5,7 @@ date: 2008-11-01 07:52:00+00:00
 layout: post
 slug: review-crumpler-cheesytine
 title: 'Review: Crumpler CheesyTina'
-wordpress_id: 67
+author: dombarnes
 categories:
 - review
 tags:

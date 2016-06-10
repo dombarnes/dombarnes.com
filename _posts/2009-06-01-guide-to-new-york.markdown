@@ -5,7 +5,7 @@ date: 2009-06-01 16:00:23+00:00
 layout: post
 slug: guide-to-new-york
 title: Guide to New York
-wordpress_id: 60
+author: dombarnes
 categories:
 - life
 tags:

@@ -6,6 +6,7 @@ date: 2012-01-01 16:19:31+00:00
 layout: post
 slug: personal-debt-january-2012
 title: 'Personal Debt: January 2012'
+author: dombarnes
 categories:
 - personal debt
 ---

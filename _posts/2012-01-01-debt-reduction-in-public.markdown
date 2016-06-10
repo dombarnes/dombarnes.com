@@ -5,7 +5,7 @@ date: 2012-01-01 16:09:16+00:00
 layout: post
 slug: debt-reduction-in-public
 title: Debt Reduction in public
-wordpress_id: 35
+author: dombarnes
 categories:
 - personal debt
 ---

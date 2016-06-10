@@ -6,6 +6,7 @@ date: 2013-01-16 23:18:43+00:00
 layout: post
 slug: personal-debt-end-of-year-wrap-up
 title: 'Personal Debt: End Of Year Wrap Up'
+author: dombarnes
 categories:
 - personal debt
 ---

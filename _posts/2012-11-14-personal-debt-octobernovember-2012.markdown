@@ -6,6 +6,7 @@ date: 2012-11-14 16:44:01+00:00
 layout: post
 slug: personal-debt-octobernovember-2012
 title: Personal Debt - October+November 2012
+author: dombarnes
 categories:
 - personal debt
 ---
