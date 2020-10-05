@@ -4,7 +4,6 @@ comments: false
 title: About
 permalink: /about/
 ---
-{{ page.path }}
 Hey. I'm Dom. But you probably guessed that from the URL.
 By day I work for a small company supporting other companies and schools that use Macs. I install servers and desktops running Mac OS X, help solve problems and resolve issues, and generally deal with the business bits of being a small company. In the evening I swap between bassist for [Corsairs](http://www.myspace.com/corsairstheband), husband, and amateur photographer.  
 

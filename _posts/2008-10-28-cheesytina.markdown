@@ -16,7 +16,7 @@ tags:
 ---
 
 When it comes to bags, there are a few big names. Louis Vitton, Gucci, Prada, Toki Doki, Birkin, but none of these have the eccentric names that Crumpler bring to the table.
-The [CheesyTina](http://www.crumpler.co.uk/?product=Cheesy_Chick_+_Cheesytina&page=details&product_id=CHT13-004&size=) is my first (well second really) foray into Crumpler bags but I've coveted them, just like Jesus told me to, for a while. This usually comes from spending an hour looking at [whatsinmybag](http://flickr.com/tags/whatsinmybag) tagged photos on Flickr and lusting over each bag. But the time came for me to roll my tongue back up into my mouth and fork over the cold hard cash.
+The [CheesyTina](http://www.crumpler.co.uk/?product=Cheesy_Chick_+_Cheesytina&page=details&product_id=CHT13-004&size=) is my first (well second really) foray into Crumpler bags but I've coveted them, just like Jesus told me to, for a while. This usually comes from spending an hour looking at [whatsinmybag](https://flickr.com/tags/whatsinmybag) tagged photos on Flickr and lusting over each bag. But the time came for me to roll my tongue back up into my mouth and fork over the cold hard cash.
 
 
 
