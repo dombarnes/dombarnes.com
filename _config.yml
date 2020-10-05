@@ -43,6 +43,7 @@ timezone:    Europe/London
 
 # baseurl: ""
 url: https://dombarnes.com # the base hostname & protocol for your site
+
 #used to display twitter cards
 twitter_handle: '@domster'
 
