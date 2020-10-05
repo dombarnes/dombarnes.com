@@ -1,11 +1,10 @@
 ---
-
+author: dombarnes
 comments: true
 date: 2010-02-21 00:13:40+00:00
 layout: post
 slug: 365-days-ago
 title: 365 Days ago...
-author: dombarnes
 tags: featured
 ---
 

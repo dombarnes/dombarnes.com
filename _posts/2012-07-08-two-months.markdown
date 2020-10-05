@@ -1,11 +1,10 @@
 ---
-
+author: dombarnes
 comments: true
 date: 2012-07-08 21:19:55+00:00
 layout: post
 slug: two-months
 title: Two Months
-author: dombarnes
 categories:
 - life
 ---

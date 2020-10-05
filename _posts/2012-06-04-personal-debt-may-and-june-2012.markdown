@@ -1,12 +1,10 @@
 ---
-
 author: dombarnes
 comments: true
 date: 2012-06-04 16:01:09+00:00
 layout: post
 slug: personal-debt-may-and-june-2012
 title: 'Personal Debt: May and June 2012'
-author: dombarnes
 categories:
 - personal debt
 ---

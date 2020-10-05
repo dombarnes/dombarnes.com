@@ -1,11 +1,8 @@
 ---
 layout: default
 ---
-
 <div class="teaserimage">
-    <div class="teaserimage-image" {% if site.cover %}style="background-image: url({{ site.cover }})"{% endif %}>
-        Teaser Image
-    </div>
+    <div class="teaserimage-image" {% if site.cover %}style="background-image: url({{ site.cover }})"{% endif %}></div>
 </div>
 
 <header class="blog-header">
@@ -23,13 +20,13 @@ layout: default
             &nbsp;&nbsp;·&nbsp;&nbsp;
         {% endif %}
       {% endfor %}
-      <a href="/about/">About</a>
+      <a href="{% link about.md %}">About</a>
     </div>
 </header>
 
 
 <main class="content" role="main">
-
+  {% if paginator.page == 1 %}
     {% if site.tags.featured %}
     <h5 class="index-headline featured"><span>Featured</span></h5>
 
@@ -45,13 +42,12 @@ layout: default
             </section>
             <div class="post-meta">
               <time itemprop="datePublished" datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-  <!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
             </div>
           </div>
         </article>
       {% endfor %}
     </div>
-
+{% endif %}
     <h5 class="index-headline normal"><span>Regular</span></h5>
     {% endif %}
 
@@ -71,7 +67,7 @@ layout: default
             <div class="post-meta">
               <time itemprop="datePublished" datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
               <meta itemprop="dateModified" content="{{ post.date | date_to_xmlschema }}" />
-<!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
+
             </div>
           </div>
         </article>
@@ -79,21 +75,16 @@ layout: default
     </div>
 
     <nav class="pagination" role="navigation">
-      {% if paginator.next_page %}
-        <a class="newer-posts" href="/page{{paginator.next_page}}">&larr; Older posts</a>
-      {% endif %}
-      <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
       {% if paginator.previous_page %}
         {% if paginator.page == 2 %}
-          <a class="older-posts" href="/">Newer posts &rarr;</a>
+          <a class="older-posts" href="{{paginator.previous_page_path }}">&larr; Newer posts</a>
         {% else %}
-          <a class="older-posts" href="/page{{paginator.previous_page}}">Newer posts &rarr;</a>
+          <a class="older-posts" href="{{ paginator.paginator.next_page_path }} ">&larr; Newer posts</a>
         {% endif %}
       {% endif %}
+      <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+      {% if paginator.next_page %}
+        <a class="newer-posts" href="{{ paginator.next_page_path }}">Older posts &rarr;</a>
+      {% endif %}
     </nav>
-
-
-    <!-- {{!! After all the posts, we have the previous/next pagination links }}
-    {{pagination}} -->
-
 </main>

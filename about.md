@@ -4,6 +4,7 @@ comments: false
 title: About
 permalink: /about/
 ---
+{{ page.path }}
 Hey. I'm Dom. But you probably guessed that from the URL.
 By day I work for a small company supporting other companies and schools that use Macs. I install servers and desktops running Mac OS X, help solve problems and resolve issues, and generally deal with the business bits of being a small company. In the evening I swap between bassist for [Corsairs](http://www.myspace.com/corsairstheband), husband, and amateur photographer.  
 
@@ -13,7 +14,7 @@ I write here about a lot of stuff, technology, money, life, the usual stuff. I a
 
 **Current Gear**
 
-- MacBook Air Mid-2011 1.8GHz Core i7 4GB 256GB SSD  
-- iPhone 6S 64GB White  
-- Apple Watch Sport in Space Grey with Midnight Blue Sport strap  
-- iPad 3 32GB White  
+- MacBook Pro 2019 2.4 GHz Quad-Core Intel Core i5
+- iPhone 11 Pr
+- Apple Watch Series 5 Sport in Space Grey with Midnight Blue Sport strap
+- iPad Air 2

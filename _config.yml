@@ -1,10 +1,11 @@
 # Build settings
 gems:
   - jemoji
-  - jekyll-paginate
   - jekyll-sitemap
   - kramdown
-
+plugins:
+  - jekyll-paginate
+#   - jekyll-gzip
 exclude:
   - config.ru
   - Gemfile
@@ -12,6 +13,7 @@ exclude:
   - vendor
   - Procfile
   - Rakefile
+  - README.md
   - s3_website.yml
 
 markdown: kramdown
@@ -20,7 +22,6 @@ markdown: kramdown
 title: "Dom Barnes"
 description: > # this means to ignore newlines until "email:"
    Hi I'm @domster. I write about technology mostly.
-
 email: dom@dombarnes.com
 #blog logo
 logo: "/assets/images/df_logo.jpg"
@@ -36,8 +37,8 @@ paginate:	8
 permalink: /:title/
 timezone:    Europe/London
 
-url: "http://dombarnes.com" # the base hostname & protocol for your site
-baseurl: ""
+# baseurl: ""
+url: https://dombarnes.com # the base hostname & protocol for your site
 #used to display twitter cards
 twitter_handle: '@domster'
 
