@@ -6,6 +6,10 @@ gems:
 plugins:
   - jekyll-paginate
 #   - jekyll-gzip
+
+include:
+  - _headers
+  
 exclude:
   - config.ru
   - Gemfile
