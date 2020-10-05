@@ -37,7 +37,7 @@
 
 # A redirect rule with all the supported properties
 [[redirects]]
-  from = "/blog/:year/:month/:day/:slug"
+  from = "/blog/:year/:month/:slug"
   to = "/:slug"
 
   # The default HTTP status code is 301, but you can define a different one.
@@ -77,4 +77,4 @@
   no-cache,
   no-store,
   must-revalidate'''
-  
+
