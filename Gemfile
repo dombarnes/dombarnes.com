@@ -4,7 +4,6 @@ ruby '2.7.1'
 gem 'jekyll', '~> 4.1.0'
 gem 'bourbon'
 gem 'jemoji'
-gem 'rack-jekyll'
 gem 'rack-cache'
 gem 'rake'
 gem 'kramdown', ">= 2.3.0"
