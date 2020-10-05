@@ -1,11 +1,15 @@
 ---
+author: dombarnes
 comments: true
 date: 2013-02-25 12:34:23+00:00
 layout: post
 slug: nifty-minidrive
 title: Nifty MiniDrive
-tags: featured
-author: dombarnes
+images:
+    thumbnail: assets/article_images/2013-02-25-nifty-minidrive/IMG_0001.jpg
+tags: 
+- featured
+- tech
 post_image: '/assets/article_images/2013-02-25-nifty-minidrive/IMG_0001.jpg'
 twitter_card: summary_large_image
 ---
@@ -14,7 +18,7 @@ In July 2012, I backed my first Kickstarter, the Nifty Drive. The idea is simple
 
 When I bought my MacBook Air in San Francisco in 2011 and bought the best one I could  get. I was saving some money buying it in the USA so went for the 1.8GHz i7 model. It came with a 256GB SD. Moving from a MacBook Pro that had a 320GB hard drive, I immediately had to get used to working with much less space. I ditched some old iPhoto Libraries, some TV and Movies from iTunes and moved my VMWare Fusion machines to an external hard drive, and managed to get my usage down to 223GB.
 
-When iTunes Match launched, I signed up and removed another 7GB of music from my laptop, which is my only machine. Still, work required me to have a bit more hard drive space, and increasingly needed quick access to my Windows machine for tech suppor.  Running VMWare Fusion over USB was a joke, unusable. So the Nifty seemed like a great way to help my storage needs.
+When iTunes Match launched, I signed up and removed another 7GB of music from my laptop, which is my only machine. Still, work required me to have a bit more hard drive space, and increasingly needed quick access to my Windows machine for tech support.  Running VMWare Fusion over USB was a joke, unusable. So the Nifty seemed like a great way to help my storage needs.
 
 ![]({{ site.url }}/assets/article_images/2013-02-25-nifty-minidrive/IMG_0001.jpg)
 

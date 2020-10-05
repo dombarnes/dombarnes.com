@@ -1,19 +1,20 @@
 ---
 ---
 <!DOCTYPE html>
-<html>
+<html lang="en-GB">
   {% include head.html %}
   <body>
     {% include header.html %}
     <main class="content" role="main">
       <article class="post">
-        {% if page.image %}
-        <div class="article-image">
-          <div class="post-image-image" style="background-image: url({% if page.image %}{{ page.image }}{% endif %})">
-            Article Image
-          </div>
-          <div class="post-image-image2" style="background-image: url({% if page.image2 %}{{ page.image2 }}{% endif %})">
-            Article Image
+        {% if post.image %}
+          <div class="article-image">
+            <div class="post-image-image" style="background-image: url({% if post.image %}{{ post.image }}{% endif %})">
+              Article Image
+            </div>
+            <div class="post-image-image2" style="background-image: url({% if post.image2 %}{{ post.image2 }}{% endif %})">
+              Article Image
+            </div>
           </div>
           <div class="post-meta">
             <h1 class="post-title">{{ page.title }}</h1>
@@ -22,14 +23,24 @@
               <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ site.author }}</h4>
               on
               <time itemprop="datePublished" datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time>
-              <!-- , tagged on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}} -->
+              <span class="post-tags-set">
+                {% if page.tags.size > 0 %}in |
+                {% for tag in page.tags %}
+                  <span class="post-tag-{{ slug }}">
+                  <a href="{{ tag | slugify }}">{{ tag | capitalize }}</a>|
+                  </span>
+                {% endfor %}
+              {% endif %}
+              </span>
             </div>
             <div style="text-align:center">
               <a href="#topofpage" class="topofpage"><i class="fa fa-angle-down"></i></a>
             </div>
           </div>
         </div>
+
         {% else %}
+        
         <div class="noarticleimage">
           <div class="post-meta">
             <h1 class="post-title">{{ page.title }}</h1>
@@ -38,7 +49,15 @@
               <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ page.author }}</h4>
               on
               <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>
-              <!-- , tagged on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}} -->
+              <span class="post-tags-set">
+                {% if page.tags.size > 0 %}in |
+                {% for tag in page.tags %}
+                  <span class="post-tag-{{ slug }}">
+                  <a href="{{ tag | slugify }}">{{ tag | capitalize }}</a>|
+                  </span>
+                {% endfor %}
+              {% endif %}
+              </span>
             </div>
           </div>
         </div>
@@ -46,6 +65,7 @@
         <br>
         <br>
         {% endif %}
+        
         <section class="post-content">
           <div class="post-reading">
             <span class="post-reading-time"></span> read
@@ -72,20 +92,14 @@
               <div class="author-image" style="background-image: url({{site.author_image}})">Blog Logo</div>
               <h4>{{ site.author }}</h4>
               <p class="bio">{{author.bio}}</p>
-              <hr>
+              <hr />
               <p class="published">Published <time itemprop="datePublished" datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time></p>
             </section>
           </div>
-          {{/post}}
+          
           <div class="isRight">
             <h5 class="index-headline featured"><span>Supported by</span></h5>
-            <footer class="site-footer">
-              <section class="poweredby">Proudly published with <a href="http://jekyllrb.com"> Jekyll</a></section>
-              <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}"> <span class="tooltip"> <i class="fa fa-rss"></i> You should subscribe to my feed.</span></a>
-              <div class="inner">
-                <section class="copyright">All content copyright <a href="{{@blog.url}}/">{{site.author}}</a> &copy; {{ site.time | date: '%Y' }}<br>All rights reserved.</section>
-              </div>
-            </footer>
+            {% include footer.html %}
           </div>
         </div>
         {% if site.disqus %}
@@ -94,9 +108,7 @@
       </article>
     </main>
     <div class="bottom-closer">
-      <div class="background-closer-image" {%if site.cover %} style="background-image: url({{ site.cover }})"{% endif %}>
-        Image
-      </div>
+      <div class="background-closer-image" {%if site.cover %} style="background-image: url({{ site.cover }})"{% endif %}></div>
       <div class="inner">
         <h1 class="blog-title">{{ site.title }}</h1>
         <h2 class="blog-description">{{ site.description }}</h2>

@@ -5,3 +5,9 @@ Disallow: /css
 Disallow: /js
 Disallow: /assets
 Sitemap: {{ site.url }}/sitemap.xml
+
+User-agent: Twitterbot
+Allow: /assets
+
+User-Agent: LinkedInBot/1.0
+Allow: /

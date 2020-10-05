@@ -1,12 +1,10 @@
 ---
-
 author: dombarnes
 comments: false
 date: 2012-02-01 00:00:00+00:00
 layout: post
 slug: personal-debt-february-2012
 title: 'Personal Debt: February 2012'
-author: dombarnes
 categories:
 - personal debt
 ---
