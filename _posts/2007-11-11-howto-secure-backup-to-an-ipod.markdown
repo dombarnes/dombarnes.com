@@ -1,9 +1,9 @@
 ---
+author: dombarnes
 date: 2007-11-11 23:34:53+00:00
 layout: post
 slug: howto-secure-backup-to-an-ipod
 title: 'HOWTO: Secure Backup to an iPod'
-author: dombarnes
 categories:
 - apple
 - howto

@@ -13,7 +13,7 @@ I write here about a lot of stuff, technology, money, life, the usual stuff. I a
 
 **Current Gear**
 
-- MacBook Air Mid-2011 1.8GHz Core i7 4GB 256GB SSD  
-- iPhone 6S 64GB White  
-- Apple Watch Sport in Space Grey with Midnight Blue Sport strap  
-- iPad 3 32GB White  
+- MacBook Pro 2019 2.4 GHz Quad-Core Intel Core i5
+- iPhone 11 Pr
+- Apple Watch Series 5 Sport in Space Grey with Midnight Blue Sport strap
+- iPad Air 2

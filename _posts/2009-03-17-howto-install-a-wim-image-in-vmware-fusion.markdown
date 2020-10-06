@@ -1,11 +1,10 @@
 ---
-
+author: dombarnes
 comments: true
 date: 2009-03-17 21:32:46+00:00
 layout: post
 slug: howto-install-a-wim-image-in-vmware-fusion
 title: 'HOWTO: Install a WIM Image in VMWare Fusion'
-author: dombarnes
 categories:
 - howto
 - macosx
