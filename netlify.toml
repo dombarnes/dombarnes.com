@@ -12,7 +12,7 @@
   publish = "_site/"
 
   # Default build command.
-  command = "jekyll build"
+  command = "bundle exec jekyll build"
 
   # Directory with the serverless Lambda functions to deploy to AWS.
   # functions = "functions/"
@@ -30,10 +30,8 @@
 [build.processing.images]
   compress = false
 
-# A basic redirect rule
-[[redirects]]
-  from = "/*"
-  to = "/blog/:splat"
+[context.staging.environment]
+  SINATRA_ENV = "production"
 
 # A redirect rule with all the supported properties
 [[redirects]]
@@ -54,13 +52,6 @@
   # You can also define custom headers within your redirects blocks.
   [redirects.headers]
     X-From = "Netlify"
-
-# The following redirect is intended for use with most SPAs that handle
-# routing internally.
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
 
 [[headers]]
   # Define which paths this specific [[headers]] block will cover.

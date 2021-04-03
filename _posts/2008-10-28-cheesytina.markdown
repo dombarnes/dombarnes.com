@@ -30,16 +30,16 @@ Why did I choose this bag? Well its all thanks to one man. Benjamin Stanley. Aft
 
 That night I placed my order and waited. Today it arrived, much to my gross excitement, and I can now present the first unboxing shots.
 
-![Unboxing](/assets/cimg0296.jpg)
+![Unboxing](/assets/cimg0296.jpg){:loading="lazy"}
 
 As you may notice, the packaging left a lot to be desired. Compared to my other bag (a Pretty Boy camera bag) it was starkers! No Crumpler cellophane at all!
 
-![The CheesyTina](/assets/cimg0298.jpg)
+![The CheesyTina](/assets/cimg0298.jpg){:loading="lazy"}
 The CheesyTina (Full Frontal)
 
 Here it is, in all its free-from-a-box glory, waiting to be filled!. 
 
-![Exploded CheesyTina](/assets/cimg0299.jpg)
+![Exploded CheesyTina](/assets/cimg0299.jpg){:loading="lazy"}
 
 Exhibit C: The removeable Laptop Case, to fit a mac up to 15"  (yes it first 15.4" widescreens)
 
