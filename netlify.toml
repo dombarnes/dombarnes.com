@@ -32,7 +32,7 @@
 
 [context.production]
   publish = "_site/"
-  command = "bundle exec jeckyll build"
+  command = "bundle exec jekyll build"
   environment = { SINATRA_ENV = "production" }
 
 [context.staging.environment]
@@ -58,19 +58,47 @@
   [redirects.headers]
     X-From = "Netlify"
 
-[[headers]]
-  # Define which paths this specific [[headers]] block will cover.
-  for = "/*"
+# [[headers]]
+#   # Define which paths this specific [[headers]] block will cover.
+#   for = "/*"
 
-  [headers.values]
-    # X-Frame-Options = "DENY"
-    X-XSS-Protection = "1; mode=block"
-    Content-Security-Policy = "frame-ancestors 'self' https://*.trilbytv.co.uk"
+#   [headers.values]
+#     # X-Frame-Options = "DENY"
+#     X-XSS-Protection = "1; mode=block"
+#     Content-Security-Policy = "frame-ancestors 'self' https://*.trilbytv.co.uk"
 
     # Multi-value headers are expressed with multi-line strings.
-  cache-control = '''
-  max-age=0,
-  no-cache,
-  no-store,
-  must-revalidate'''
+    # cache-control = '''
+    # max-age=0,
+    # no-cache,
+    # no-store,
+    # must-revalidate'''
 
+# netlify.toml
+
+[[headers]]
+  # Set the default header to the one we want for documents
+  for = "/*"
+    [headers.values]
+    cache-control = "public,max-age=60"
+    Referrer-Policy = "no-referrer-when-downgrade"
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Feature-Policy = "camera 'none'; geolocation 'none'; microphone 'none'"
+    Strict-Transport-Security = "max-age=2592000; includeSubDomains"
+    Accept-CH = "Downlink,RTT,Device-Memory,Save-Data,DPR,Width"
+    Content-Security-Policy = '''
+    default-src 'self';
+    script-src 'self' 'sha256-kG9G0E66mI9XyzdiFuBVspO/HjTCbQAzPf51eJmFyrk=' 'sha256-2uUPBq4yNCYFRFDn7VT4SEcadsxdPeVvGYq/DJVdua0=' www.google-analytics.com *.cloudfront.net code.jquery.com;
+    img-src 'self' data: dombarnes.com *.google-analytics.com;
+    font-src 'self' 'unsafe-inline' cloudfront.net maxcdn.bootstrapcdn.com *.fastly.net;
+    connect-src 'self' www.google-analytics.com;
+    style-src 'self' 'unsafe-inline' platform.twitter.com *.cloudfront.net maxcdn.bootstrapcdn.com brick.a.ssl.fastly.net;
+    child-src 'self' *.twitter.com noti.st;
+    worker-src 'self';'''
+
+[[headers]]
+  # Override cache duration for assets with periods in the filename (i.e. static assets)
+  for = "/*.*"
+    [headers.values]
+    cache-control = "public,max-age=360000"
