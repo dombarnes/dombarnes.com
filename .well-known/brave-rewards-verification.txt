@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: dombarnes.com
+Token: b4ebda3dd663e24202e93896d46f0827517f82890b274bc2aa6922dd89e0b1f7

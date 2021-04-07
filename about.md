@@ -14,6 +14,6 @@ I write here about a lot of stuff, technology, money, life, the usual stuff. I a
 **Current Gear**
 
 - MacBook Pro 2019 2.4 GHz Quad-Core Intel Core i5
-- iPhone 11 Pr
+- iPhone 11 Pro
 - Apple Watch Series 5 Sport in Space Grey with Midnight Blue Sport strap
 - iPad Air 2

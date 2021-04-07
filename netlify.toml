@@ -30,6 +30,11 @@
 [build.processing.images]
   compress = false
 
+[context.production]
+  publish = "_site/"
+  command = "bundle exec jeckyll build"
+  environment = { SINATRA_ENV = "production" }
+
 [context.staging.environment]
   SINATRA_ENV = "production"
 

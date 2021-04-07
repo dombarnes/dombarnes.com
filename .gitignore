@@ -7,3 +7,5 @@ codekit-config.json
 node_modules
 _asset_bundler_cache
 s3_website.yml
+.netlify/
+.jekyll-cache/
