@@ -1,0 +1,16 @@
+.links-content {
+  width: 100%;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+.link-block {
+  background-color: #32feda;
+  padding: 40px 60px;
+  border: 2px solid darken(#12feda, 10%);
+  margin: 30px;
+  text-align: center;
+  font-size: 38pt;
+  a {
+    text-decoration: none;
+  }
+}

@@ -279,3 +279,9 @@ printStatus "Complete"
 resetColor
 
 ```
+
+References
+[1][https://kb.objectrocket.com/redis/run-redis-with-docker-compose-1055]
+[2][https://azure.github.io/AppService/2018/06/27/How-to-use-Azure-Container-Registry-for-a-Multi-container-Web-App.html]
+[3][https://medium.com/@michiels/a-weekend-a-rails-app-a-kubernetes-and-an-azure-d330b003d7c2]
+[4][https://azure.github.io/AppService/2020/06/29/zero_to_hero_pt1.html]
