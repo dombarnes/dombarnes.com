@@ -1,0 +1,13 @@
+{
+  "[ruby]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false,
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/.sass-cache": true,
+    "**/.jekyll-cache": true,
+    "**/_site": true
+  },
+}

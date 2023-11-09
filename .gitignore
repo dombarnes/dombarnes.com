@@ -9,3 +9,4 @@ _asset_bundler_cache
 s3_website.yml
 .netlify/
 .jekyll-cache/
+.bundle/

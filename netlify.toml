@@ -102,3 +102,17 @@
   for = "/*.*"
     [headers.values]
     cache-control = "public,max-age=360000"
+
+[[headers]]
+  # Override cache duration for assets with periods in the filename (i.e. static assets)
+  for = "/rss.xml"
+    [headers.values]
+    Content-Type = "application/rss+xml"
+    X-Frame-Options = "ALLOW"
+
+[[headers]]
+  # Override cache duration for assets with periods in the filename (i.e. static assets)
+  for = "/feed.xml"
+    [headers.values]
+    Content-Type = "application/atom+xml"
+    X-Frame-Options = "ALLOW"
