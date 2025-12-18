@@ -1,9 +1,10 @@
 # Build settings
-gems:
+#
+# Note: `gems:` is deprecated in favour of `plugins:`. Keep all Jekyll plugins
+# under `plugins:` to ensure consistent loading across build environments.
+plugins:
   - jemoji
   - jekyll-sitemap
-  - kramdown
-plugins:
   - jekyll-paginate
 #   - jekyll-gzip
 
