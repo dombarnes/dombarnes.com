@@ -69,7 +69,7 @@
   [headers.values]
     # X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
-    Content-Security-Policy = "frame-ancestors 'self' https://*.trilbytv.co.uk"
+    Content-Security-Policy = "frame-ancestors 'self' https://*.trilbytv.co.uk; img-src 'self' data: https://farm5.static.flickr.com https://*.staticflickr.com https://live.staticflickr.com https://*.flickr.com"
 
     # Multi-value headers are expressed with multi-line strings.
   cache-control = '''
