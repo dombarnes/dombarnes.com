@@ -2,7 +2,7 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="{{ site.twitter_handle }}" />
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-  <meta name="twitter:image" content="{% if page.post_image %}{{ page.post_image | prepend: site.url }}{% else %}{{ site.cover | prepend: site.url }}{% endif %}" />
+  <meta name="twitter:image" content="{% if page.image %}{{ page.image | prepend: site.url }}{% elsif page.post_image %}{{ page.post_image | prepend: site.url }}{% else %}{{ site.cover | prepend: site.url }}{% endif %}" />
   {% if page.excerpt %}
     <meta name="twitter:description"  content="{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}" />
   {% elsif site.description %}
