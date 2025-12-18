@@ -21,7 +21,7 @@
                 {% if page.tags.size > 0 %}in |
                 {% for tag in page.tags %}
                   <span class="post-tag-{{ slug }}">
-                  <a href="{{ tag | slugify }}">{{ tag | capitalize }}</a>|
+                  <a href="/tags/#{{ tag | slugify }}">{{ tag | capitalize }}</a>|
                   </span>
                 {% endfor %}
               {% endif %}
@@ -43,7 +43,7 @@
                 {% if page.tags.size > 0 %}in |
                 {% for tag in page.tags %}
                   <span class="post-tag-{{ slug }}">
-                  <a href="{{ tag | slugify }}">{{ tag | capitalize }}</a>|
+                  <a href="/tags/#{{ tag | slugify }}">{{ tag | capitalize }}</a>|
                   </span>
                 {% endfor %}
               {% endif %}
