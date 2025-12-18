@@ -25,55 +25,48 @@
   <link rel="stylesheet" type="text/css" media="screen" href="{{ "/css/main.css"  | prepend: site.baseurl  }}" />
   <link rel="stylesheet" type="text/css" media="print" href="{{ "/css/print.css"  | prepend: site.baseurl  }}" />
 
-  {% if page.layout != 'home' %}
-  <script type="application/ld+json">
-    {
-    "@context": "http://schema.org",
-    "@type": "Blog",
-    "headline": "{{ page.title }}",
-    "mainEntityOfPage":{
-      "@type":"WebPage",
-      "@id":"{{ site.url }}{{ page.url }}"
-    },
-    "url": "{{ site.url }}",
-    "author": {
-      "@type": "Person",
-      "name": "{{ site.author }}"
-    },
-    "publisher": {
-      "@type": "Person",
-      "name": "{{ site.author }}",
-      "image": "{{ site.url }}{{ site.author_image }}"
+  {% assign canonical_url = page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
+  {% assign structured_image = page.image | default: page.post_image %}
+
+  {% if page.layout == 'post' or page.date %}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": {{ page.title | jsonify }},
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": {{ canonical_url | jsonify }}
+        },
+        "url": {{ canonical_url | jsonify }},
+        "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+        "dateModified": {{ page.date | date_to_xmlschema | jsonify }},
+        "author": {
+          "@type": "Person",
+          "name": {{ site.author | jsonify }}
+        },
+        "publisher": {
+          "@type": "Person",
+          "name": {{ site.author | jsonify }},
+          "image": {{ site.author_image | prepend: site.url | jsonify }}
+        }{% if structured_image %},
+        "image": {% if structured_image contains '://' %}{{ structured_image | jsonify }}{% else %}{{ structured_image | prepend: site.url | jsonify }}{% endif %}
+        {% endif %}
       }
-  }
-  </script>
+    </script>
   {% else %}
-  <script type="application/ld+json">
-    {
-    "@context": "http://schema.org",
-    "@type": "BlogPosting",
-    "headline": "{{ page.title }}",
-    "mainEntityOfPage":{
-      "@type":"WebPage",
-      "@id":"{{ site.url }}{{ page.url }}"
-    },
-    "url": "{{ site.url }}{{ page.url }}",
-    "dateCreated": "{{ page.date }}",
-    "author": {
-      "@type": "Person",
-      "name": "{{ site.author }}"
-    },
-    "datePublished": "{{ page.date }}",
-    "dateModified": "{{ page.date }}",
-    {% if page.image %}
-     "image": "{{ page.image }},"
-    {% endif %}
-    "publisher": {
-      "@type": "Person",
-      "name": "{{ site.author }}",
-      "image": "{{ site.url }}{{ site.author_image }}"
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": {{ site.title | jsonify }},
+        "url": {{ site.url | jsonify }},
+        "description": {{ site.description | strip_html | strip_newlines | jsonify }},
+        "publisher": {
+          "@type": "Person",
+          "name": {{ site.author | jsonify }}
+        }
       }
-  }
-  </script>
+    </script>
   {% endif %}
 </head>
