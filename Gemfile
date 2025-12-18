@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
-ruby '2.7.1'
+ruby '3.2.6'
 
-gem 'jekyll', '~> 4.1.0'
+gem 'jekyll', '~> 4.3.0'
 gem 'bourbon'
 gem 'jemoji'
 gem 'rack-cache'
 gem 'rake'
-gem 'kramdown', ">= 2.3.0"
+gem 'kramdown', ">= 2.5.0"
 gem 'jekyll-sitemap'
 gem 'jekyll-paginate'
 
@@ -15,5 +15,5 @@ group :jekyll_plugins do
 end
 
 group :development do
-  gem 'puma', ">= 4.3.5"
+  gem 'puma', ">= 6.0.0"
 end
