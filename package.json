@@ -1,0 +1,17 @@
+{
+  "name": "dombarnes.com",
+  "private": true,
+  "packageManager": "pnpm@10.33.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "@netlify/plugin-csp-nonce": "^1.6.2",
+    "gray-matter": "^4.0.3",
+    "markdown-it": "^14.1.0",
+    "vitepress": "^1.6.4"
+  }
+}

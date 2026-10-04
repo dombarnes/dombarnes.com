@@ -1,8 +1,6 @@
 ---
 layout: links
-comments: false
 title: Links
-permalink: /links/
 ---
 <div class="link-block">
     <a href="https://twitter.com/domster">Follow my Tweets</a>

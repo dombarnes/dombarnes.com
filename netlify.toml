@@ -9,10 +9,10 @@
   # the build. This is relative to the base directory if one has been set, or the
   # root directory if a base has not been set. This sample publishes the
   # directory located at the absolute path "root/project/build-output"
-  publish = "_site/"
+  publish = ".vitepress/dist"
 
   # Default build command.
-  command = "bundle exec jekyll build"
+  command = "pnpm build"
 
   # Directory with the serverless Lambda functions to deploy to AWS.
   # functions = "functions/"
@@ -31,12 +31,22 @@
   compress = false
 
 [context.production]
-  publish = "_site/"
-  command = "bundle exec jekyll build"
+  publish = ".vitepress/dist"
+  command = "pnpm build"
   environment = { SINATRA_ENV = "production" }
 
 [context.staging.environment]
   SINATRA_ENV = "production"
+
+# Add a new nonce on each HTML request and put it on each script tag.
+# reportOnly is false so the browser enforces this policy. The plugin default only reports.
+[[plugins]]
+  package = "@netlify/plugin-csp-nonce"
+  [plugins.inputs]
+    reportOnly = false
+    unsafeEval = false
+    https = false
+    http = false
 
 # A redirect rule with all the supported properties
 [[redirects]]
@@ -89,13 +99,11 @@
     Accept-CH = "Downlink,RTT,Device-Memory,Save-Data,DPR,Width"
     Content-Security-Policy = '''
     default-src 'self';
-    script-src 'self' 'sha256-2uUPBq4yNCYFRFDn7VT4SEcadsxdPeVvGYq/DJVdua0=' www.google-analytics.com *.cloudfront.net https://cdn.jsdelivr.net/npm/@hotwired/;
-    img-src 'self' data: dombarnes.com *.google-analytics.com;
-    font-src 'self' 'unsafe-inline' cloudfront.net maxcdn.bootstrapcdn.com *.fastly.net https://fonts.gstatic.com;
-    connect-src 'self' www.google-analytics.com;
-    style-src 'self' 'unsafe-inline' platform.twitter.com *.cloudfront.net maxcdn.bootstrapcdn.com brick.a.ssl.fastly.net https://fonts.googleapis.com;
-    child-src 'self' *.twitter.com noti.st;
-    worker-src 'self';'''
+    script-src 'self' 'unsafe-inline' https://www.google-analytics.com;
+    img-src 'self' https://*.google-analytics.com https://farm5.static.flickr.com;
+    font-src https://maxcdn.bootstrapcdn.com https://fonts.gstatic.com https://brick.freetls.fastly.net;
+    connect-src 'self' https://www.google-analytics.com;
+    style-src 'self' 'unsafe-inline' https://maxcdn.bootstrapcdn.com https://fonts.googleapis.com https://brick.a.ssl.fastly.net;'''
 
 [[headers]]
   # Override cache duration for assets with periods in the filename (i.e. static assets)
