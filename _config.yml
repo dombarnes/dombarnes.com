@@ -9,6 +9,7 @@ plugins:
 
 include:
   - _redirects
+  - .well-known/
   
 exclude:
   - config.ru
@@ -19,6 +20,7 @@ exclude:
   - Rakefile
   - README.md
   - s3_website.yml
+  - staging/*
 
 markdown: kramdown
 
@@ -47,12 +49,13 @@ url: https://dombarnes.com # the base hostname & protocol for your site
 #used to display twitter cards
 twitter_handle: '@domster'
 
-#fill in disqus shortname to use disqus
-disqus: dombarnes
+# fill in disqus shortname to use disqus
+# disqus: dombarnes
 
 # social icons and sharing options
 social:
   - icon:	twitter
+    username: domster
     url:	https://twitter.com/domster
     desc: Follow me on twitter
     share_url: https://twitter.com/share

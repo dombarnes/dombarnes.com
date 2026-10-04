@@ -1,8 +1,7 @@
 source 'https://rubygems.org'
-ruby '2.7.1'
+ruby File.read('.ruby-version').strip
 
-gem 'jekyll', '~> 4.1.0'
-gem 'bourbon'
+gem 'jekyll', '~> 4.4.0'
 gem 'jemoji'
 gem 'rack-cache'
 gem 'rake'
@@ -15,5 +14,5 @@ group :jekyll_plugins do
 end
 
 group :development do
-  gem 'puma', ">= 4.3.5"
+  gem 'puma', ">= 7.2.1"
 end
