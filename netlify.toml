@@ -80,7 +80,7 @@
   # Set the default header to the one we want for documents
   for = "/*"
     [headers.values]
-    cache-control = "public,max-age=60"
+    cache-control = "public,max-age=1180800"
     Referrer-Policy = "no-referrer-when-downgrade"
     X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
@@ -89,11 +89,11 @@
     Accept-CH = "Downlink,RTT,Device-Memory,Save-Data,DPR,Width"
     Content-Security-Policy = '''
     default-src 'self';
-    script-src 'self' 'sha256-kG9G0E66mI9XyzdiFuBVspO/HjTCbQAzPf51eJmFyrk=' 'sha256-2uUPBq4yNCYFRFDn7VT4SEcadsxdPeVvGYq/DJVdua0=' www.google-analytics.com *.cloudfront.net code.jquery.com;
+    script-src 'self' 'sha256-2uUPBq4yNCYFRFDn7VT4SEcadsxdPeVvGYq/DJVdua0=' www.google-analytics.com *.cloudfront.net https://cdn.jsdelivr.net/npm/@hotwired/;
     img-src 'self' data: dombarnes.com *.google-analytics.com;
-    font-src 'self' 'unsafe-inline' cloudfront.net maxcdn.bootstrapcdn.com *.fastly.net;
+    font-src 'self' 'unsafe-inline' cloudfront.net maxcdn.bootstrapcdn.com *.fastly.net https://fonts.gstatic.com;
     connect-src 'self' www.google-analytics.com;
-    style-src 'self' 'unsafe-inline' platform.twitter.com *.cloudfront.net maxcdn.bootstrapcdn.com brick.a.ssl.fastly.net;
+    style-src 'self' 'unsafe-inline' platform.twitter.com *.cloudfront.net maxcdn.bootstrapcdn.com brick.a.ssl.fastly.net https://fonts.googleapis.com;
     child-src 'self' *.twitter.com noti.st;
     worker-src 'self';'''
 
@@ -108,11 +108,17 @@
   for = "/rss.xml"
     [headers.values]
     Content-Type = "application/rss+xml"
-    X-Frame-Options = "ALLOW"
+    X-Frame-Options = "DENY"
 
 [[headers]]
   # Override cache duration for assets with periods in the filename (i.e. static assets)
   for = "/feed.xml"
     [headers.values]
     Content-Type = "application/atom+xml"
-    X-Frame-Options = "ALLOW"
+    X-Frame-Options = "DENY"
+
+[[headers]]
+  # Override cache duration for assets with periods in the filename (i.e. static assets)
+  for = "/sitemap.xml"
+    [headers.values]
+    Content-Type = " application/xml"

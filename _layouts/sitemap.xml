@@ -1,0 +1,35 @@
+---
+layout: null
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% for page in site.pages %}
+    {% if page.layout != null %}
+      <url>
+        <loc>{{ site.url }}{{ page.url | escape }}</loc>
+        <lastmod>{{ page.last_modified_at | date_to_xmlschema }}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+         {% for image in page.images %}
+          <image:image>
+            <image:loc>{{ site.url }}{{ image | escape }}</image:loc>
+          </image:image>
+        {% endfor %}
+      </url>
+    {% endif %}
+  {% endfor %}
+  {% for post in site.posts %}
+    <url>
+      <loc>{{ site.url }}{{ post.url | escape }}</loc>
+      <lastmod>{{ post.date | date_to_rfc822 }}</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+       {% for image in post.images %}
+        <image:image>
+          <image:loc>{{ site.url }}{{ image | escape }}</image:loc>
+        </image:image>
+      {% endfor %}
+    </url>
+  {% endfor %}
+</urlset>
