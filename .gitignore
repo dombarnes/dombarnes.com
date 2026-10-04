@@ -10,3 +10,5 @@ s3_website.yml
 .netlify/
 .jekyll-cache/
 .bundle/
+.vitepress/dist
+.vitepress/cache
