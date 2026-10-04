@@ -3,7 +3,7 @@
   "tasks": [
     {
       "label": "Build site",
-      "command": "bundle exec jekyll build",
+      "command": "pnpm build",
       "type": "shell",
       "args": [],
       "problemMatcher": [

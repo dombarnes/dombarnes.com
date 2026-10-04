@@ -8,6 +8,8 @@
     "**/.DS_Store": true,
     "**/.sass-cache": true,
     "**/.jekyll-cache": true,
-    "**/_site": true
+    "**/_site": true,
+    "**/.vitepress/cache": true,
+    "**/.vitepress/dist": true
   },
 }
